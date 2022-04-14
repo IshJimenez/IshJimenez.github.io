@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+            Host : "smtp.gmail.com",
+            Username : "testingrobot245@gmail.com",
+            Password : "eykxajbpekerzofl",
+            To : 'testingrobot245@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "New Contact Form Inquiry",
+            Body : "Name: " + document.getElementById("name").value
+            + "<br> Email: " + document.getElementById("email").value
+            + "<br> Phone no: " + document.getElementById("phone").value
+            + "<br> Message: " + document.getElementById("message").value
+            }).then(
+            message => alert("Message Sent Succesfully")
+    );
+        }
+    </script>
+    <title>Book Now</title>
+</head>
+<body class="bookBody">
+    <header>
+        <nav role="navigation">
+            <div>
+                <p>
+            <a href="index.html">
+            <img class="logo" src="mainLogo.JPG" alt="logo">
+            </a>
+                </p>
+            </div>
+            <div id="menuToggle">
+            <input type="checkbox" class="intro"/>
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li>
+                    <a href="" class="navM1">PATIENT INFORMATION</a>
+                        <ul>
+                            <li><a href="hrsDirections.html">Hours/Directions</a></li>
+                            <li><a href="drJ.html">Dr.Jimenez</a></li>
+                            <li><a href="covid.html">Covid-19</a></li>
+                            <li><a href="insurance.html">Insurance</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    <a href="" class="navM2">OUR SERVICES</a>
+                        <ul>
+                            <li><a href="general.html">General/Preventative</a></li>
+                            <li><a href="restorative.html">Restorative/Cosmetic</a></li>
+                            <li><a href="teeth.html">Teeth Whitening</a></li>
+                            <li><a href="ortho.html">Orthodontics</a></li>
+                            <li><a href="special.html">Special Offers</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="location.href='patient.html'">
+                        <a href="patient.html" class="navM3">PATIENT REVIEWS</a> 
+                    </li>
+                    <li onclick="location.href='book.html'">
+                        <a href="book.html" class="navM4">BOOK NOW</a> 
+                    </li>
+            </ul>
+        </div>
+            </nav>
+    </header>
+    <section class="bookSection">
+        <div class="formContainer">
+            <div class="formC">
+            <form onsubmit="sendEmail(); reset(); return false;">
+            <h2>CONTACT US</h2>
+            <p class="formP">You can contact us about anything you need to.</p>
+            <p class="formP">We’d love to hear from you!</p>
+            <p class="formP">We’ll get back to you as soon as possible.</p>
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="phone" placeholder="Phone Number" required>
+                <textarea id="message" rows="4" placeholder="How can we help you"></textarea>
+                <button class="submitBut" type="submit">Submit</button>
+            </form>
+        </div>
+            <div class="storeHrs">
+                <p class="day dayM">Monday</p>
+                <p>10 AM - 5 PM</p>
+                <p class="day">Tuesday</p>
+                <p>11 AM - 8 PM</p>
+                <p class="day">Wednesday</p> 
+                <p>Appoinment</p>
+                <p>Only</p>
+                <p class="day">Thursday</p> 
+                <p>10 AM - 5 PM</p>
+                <p class="day">Friday</p> 
+                <p>9 AM - 5 PM</p>
+                <p class="day">Saturday</p> 
+                <p>Closed</p>
+                <p class="day">Sunday</p>
+                <p>Closed</p>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div class="gFooterContainer foCBase">
+    
+                <div class="gFooterL foCBaseL">
+                    <p>In-Office Financing available call us</p>
+                </div>
+                <div class="gFooterM foCBaseM">
+                    <h2>Albania Dental</h2>
+                    <p>Maria Jimenez, DDS1395 Chapel St,</p>
+                    <p>New Haven, CT 06511</p>
+                    <p>(203) 777-9668</p>
+                </div>
+                <div class="gFooterR foCBaseR">
+                    <a href="https://www.carecredit.com/apply/?sitecode=bb3bupc06182018">
+                        <img src="footerImg.JPG" alt="Picture when clicked leads to finnancing for service">
+                    </a>
+                </div>
+         
+        </div>
+    </footer>
+</body>
+</html>

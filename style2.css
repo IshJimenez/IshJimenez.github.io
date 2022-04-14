@@ -1,0 +1,386 @@
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------- Set page --------------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    gap: 0px;
+  }
+  .navBar {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      background-color: #dce4f2;
+      /* width: 100%; */
+      /* /* margin: 10px; */
+      padding: 20px; 
+  }
+  .logo {
+      cursor: pointer;
+      margin-right: auto;
+  }
+  .navLinks {
+      list-style: none;
+  }
+  .navLinks li {
+      display: inline-block;
+      padding: 0px 20px;
+  }
+  .navLinks li a {
+      text-decoration: none;
+      transition: all 0.4s ease 0s;
+  }
+  .navLinks li a:hover {
+     color: orange;
+ }
+  .navLinks ul {
+      float: left;
+  }
+  .navLinks ul li {
+      float: left;
+  }
+  .navLinks ul li a{
+      display: block;
+      color: yellow;
+      padding: 24px 14px;
+  }
+  .navLinks ul li ul {
+      display: block;
+      position: absolute;
+  }
+  .bookB {
+      margin: 0px 20px;
+      padding: 9px 25px;
+      background-color: blue;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.4s ease 0s;
+      color: white;
+  }
+  .bookB:hover {
+    background-color: orange;
+    color: black;
+}
+.link {
+    background: none;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0px 15px;
+}
+.dropdown.active > .link,
+.link:hover {
+    color:orange;
+}
+.dropdown {
+    position: relative;
+}
+.dropdownMenu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgb(235, 230, 230);
+    padding: 0.75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+.dropdownMenu a {
+    text-decoration: none;
+}
+.dropdown.active > .link + .dropdownMenu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+.informationGrid {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 2rem;
+    background-color: #bbc6da;
+}
+.dropdownLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #bbc6da;
+}
+/* ___________________________________________________________________________________________________________________________ */
+/* __________________________________________________min-width: 192px_________________________________________________________ */
+/* ___________________________________________________________________________________________________________________________ */
+
+@media screen and (min-width: 192px) {
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/*----------------------------------------------------- Front Page ----------------------------------------------------------- */
+.build{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    width: 400px;
+    height: 1625px;
+}
+.welcomeAr1 {
+    display: grid;
+    width: 400px;
+    grid-row-start: 0;
+    grid-row-end: 1;   
+    gap: 0px; 
+}
+.welcomeA1Item {
+    background-color: #dce4f2;
+    text-align: center;
+}
+.welcomeA1Item p {
+    width: 360px;
+    padding: 10px;
+    margin: 5px;
+}
+.welcomeA1Item h1 {
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 10px;
+  }
+.welcomeA1Pic {
+    grid-row-start: 0;
+    grid-row-end: 1;
+    background-color: #dce4f2;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.welcomeA1Pic img {
+    border-radius: 125px;
+    height: 250px;
+    width: 250px;
+}
+.welcomeAr2 {
+    background-color: #bbc6da;
+    display: grid;
+    width: 400px;
+    text-align: center;
+}
+.welcomeAr2{
+    padding-top: 20px;
+}
+.welcomeAr2Pic img {
+    border-radius: 125px;
+    height: 250px;
+    width: 250px;
+}
+.welcomeA2Item p {
+    width: 360px;
+    padding: 10px;
+    margin: 5px;
+}
+.welcomeA2Item h3 {
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+.welcomeAr3 {
+    background-color: #798bac;
+    display: grid;
+    width: 400px;
+    text-align: center;
+    padding-top: 10px;
+}
+.welcomeAr3 p {
+    width: 360px;
+    padding: 10px;
+    margin: 5px;
+}
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------- Footer --------------------------------------------------------------- */
+.footerContainer {
+    background-color: #0c131f;
+    width: 400px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+.footerContainer p{
+    margin: 15px;
+}
+.footerL{
+    width: 360px;
+    padding-top: 40px;
+}
+.footerM {
+    width: 360px;
+    padding: 20px;
+}
+}
+/* ___________________________________________________________________________________________________________________________ */
+/* __________________________________________________min-width: 760px_________________________________________________________ */
+/* ___________________________________________________________________________________________________________________________ */
+
+@media screen and (min-width: 760px) {
+/* --------------------------------------------------------------------------------------------------------------------------- */
+ /*----------------------------------------------------- Front Page ----------------------------------------------------------- */
+ .build{
+    /* display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr; */
+    width: 775px;
+    height: 1275px;
+}
+.welcomeAr1 {
+    display: grid;
+    width: 775px;
+    grid-row-start: 0;
+    grid-row-end: 1;    
+}
+.welcomeA1Item {
+    background-color: #dce4f2;
+    text-align: center;
+}
+.welcomeA1Item p {
+    width: 735px;
+    padding: 10px;
+    margin: 5px;
+}
+.welcomeAr2 {
+    background-color: #bbc6da;
+    display: grid;
+    width: 775px;
+    text-align: center;
+}
+.welcomeA2Item p {
+    width: 735px;
+    padding: 10px;
+    margin: 5px;
+}
+.welcomeA2Item h3 {
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+.welcomeAr3 {
+    background-color: #798bac;
+    display: grid;
+    width: 775px;
+    text-align: center;
+    padding-top: 10px;
+}
+.welcomeAr3 p {
+    width: 735px;
+    padding: 10px;
+    margin: 5px;
+}
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------- Footer --------------------------------------------------------------- */
+.footerContainer {
+    background-color: #0c131f;
+    width: 775px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+.footerContainer p{
+    margin: 10px;
+}
+.footerL{
+    width: 735px;
+    padding-top: 40px;
+}
+.footerM {
+    width: 735px;
+    padding: 20px;
+}
+}
+
+/* ___________________________________________________________________________________________________________________________ */
+/* __________________________________________________min-width: 1020px_________________________________________________________ */
+/* ___________________________________________________________________________________________________________________________ */
+
+@media screen and (min-width: 1020px) {
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/*----------------------------------------------------- Front Page ----------------------------------------------------------- */
+
+}
+
+
+
+@media screen and (min-width: 760px) {
+    /* --------------------------------------------------------------------------------------------------------------------------- */
+     /*----------------------------------------------------- Front Page ----------------------------------------------------------- */
+     .build{
+        /* display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr; */
+        width: 775px;
+        height: 1275px;
+    }
+    .welcomeAr1 {
+        display: grid;
+        width: 775px;
+        grid-row-start: 0;
+        grid-row-end: 1;    
+    }
+    .welcomeA1Item {
+        background-color: var(--main-color);
+        text-align: center;
+    }
+    .welcomeA1Item p {
+        width: 735px;
+        padding: 10px;
+        margin: 5px;
+    }
+    .welcomeAr2 {
+        background-color: var(--main-color2);
+        display: grid;
+        width: 775px;
+        text-align: center;
+    }
+    .welcomeA2Item p {
+        width: 735px;
+        padding: 10px;
+        margin: 5px;
+    }
+    .welcomeA2Item h3 {
+        font-size: 30px;
+        font-weight: 600;
+        padding-top: 10px;
+    }
+    .welcomeAr3 {
+        background-color: var(--main-color3);
+        display: grid;
+        width: 775px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .welcomeAr3 p {
+        width: 735px;
+        padding: 1%;
+        margin: 1%;
+    }
+    /* --------------------------------------------------------------------------------------------------------------------------- */
+    /* ---------------------------------------------------- Footer --------------------------------------------------------------- */
+    .footerContainer {
+        background-color: var(--footer-color);
+        width: 775px;
+        padding: 10px;
+        color: white;
+        text-align: center;
+    }
+    .footerContainer p{
+        margin: 10px;
+    }
+    .footerL{
+        width: 735px;
+        padding-top: 40px;
+    }
+    .footerM {
+        width: 735px;
+        padding: 20px;
+    }
+    .iFooterContainer{
+      width: 735px;
+      margin-top: 25.5%;
+      }
+    }
