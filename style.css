@@ -190,6 +190,80 @@ nav ul ul li a {
   .starsFrontPage {
     margin-right: 3%;
   }
+
+  /* ---------------------------------------------------- CarouselFrontPage --------------------------------------------------------------- */
+
+  .carousel{
+    position: relative;
+    height: 400px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .carouselTrackContainer {
+    background-color: red;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .carouselTrack {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+  }
+  .carouselSlide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;    
+  }
+  .welcomeAr2, .welcomeAr3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .carouselButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+  }
+
+  .carouselButton img {
+    width: 13px;
+  }
+  .carouselL {
+    left: -20px;
+    cursor: pointer;
+  }
+  .carouselR {
+    right: -20px;
+    cursor: pointer;
+  }
+  .carouselNav {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .carouselIndicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(0,0,0,.3);
+    margin: 0 15px;
+    cursor: pointer;
+  }
+  .carouselIndicator.current_Slide {
+    background-color: rgba(0,0,0,.75);
+  }
+  .is-hidden {
+    display: none;
+  }
   /* --------------------------------------------------------------------------------------------------------------------------- */
   /* ---------------------------------------------------- Footer --------------------------------------------------------------- */
   .gFooterContainer {
