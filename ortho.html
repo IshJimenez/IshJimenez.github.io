@@ -54,13 +54,21 @@
             </nav>
     </header>
     <section class="orthoSection">
-        <img src="orthoMainPic.JPG" alt="Picture on patients teeth while smiling holding ClearCorrect">
+        <img src="orthoMainPic.JPG" class="orthoMainImg" alt="Picture on patients teeth while smiling holding ClearCorrect">
         <h1>Orthodontic Services</h1>
         <p>Dr. Jimenez has extensive training on orthodontics so she can plan the best, fastest and most effective orthodontic treatment program for each patient. We can offer conventional metal braces or clear aligners, depending on a patient’s need and preference. We can also offer young patients early orthodontic care that helps their jaws develop into the right shape for proper tooth alignment. This early system of orthodontia is called Ortho-Tain®. There is also an Ortho-Tain method for adults that results in faster correction of alignment without metal brackets or wires.</p>
         
-        <div class="orthoDiv1">
+        <div class="carouselOrtho">
+            <button class="carouselButton carouselL is-hidden">
+                <img src="arrowL.JPG" alt="Left arrow to move slide left">
+            </button>
+            
+            <div class="carouselTrackContainer">
+                <div class="carouselTrack">
+        
+        <div class="orthoDiv1 carouselSlide current_Slide">
             <div class="orthoDiv1Img">
-                <img src="orthoP1.JPG" alt="Picture of metal braces">
+                <img src="orthoP1.JPG" class="orthoNotArrowImg" alt="Picture of metal braces">
             </div>
             <div>
                 <h2>Metal Braces</h2>
@@ -68,21 +76,20 @@
             </div>           
         </div>
 
-        <div>
          
-        <div class="orthoDiv2">
+        <div class="orthoDiv2 carouselSlide">
             <div class="orthoDiv2Txt">
                 <h2>Porcelain Braces</h2>
                 <p>Porcelain braces are another great alternative option from metal braces. Rather than the traditional metal wire, porcelain brackets are made with a clear material to allow your teeth to show, making the braces less noticeable. Ask us about our porcelain braces!  </p>
             </div>
             <div class="orthoDiv2Img">
-                <img src="orthoP2.JPG" alt="Picture of porcelain braces">
+                <img src="orthoP2.JPG" class="orthoNotArrowImg" alt="Picture of porcelain braces">
             </div>
         </div>
 
-        <div class="orthoDiv3">
+        <div class="orthoDiv3 carouselSlide">
             <div class="orthoDiv3Img">
-                <img src="orthoP3.JPG" alt="Picture of ClearCorrect Braces">
+                <img src="orthoP3.JPG" class="orthoNotArrowImg" alt="Picture of ClearCorrect Braces">
             </div>
             <div>
                 <h2>ClearCorrect Invisible Braces</h2>
@@ -91,7 +98,7 @@
             </div>
         </div>
 
-        <div class="orthoDiv4">
+        <div class="orthoDiv4 carouselSlide">
             <div>
             <h3>How much is ClearCorrect?</h3>
                 <p>The average cost of ClearCorrect Limited treatment is approximately $2,500 to $3,500. The average cost of ClearCorrect Full treatment is approximately $4,000 to $5,500. Of course, treatment costs will vary depending on your specific needs. (The cost is similar to the cost of Invisalign.)</p>
@@ -100,6 +107,23 @@
                 <p class="orthoDiv4Txt3">2. Not everyone is a candidate for invisible braces, but we will evaluate your teeth and determine if this is the right treatment for you. If you are the right candidate, then we will take high-resolution digital images and x-rays to model your teeth, and send them off to our labs so your prescription can be made.</p>
                 <p class="orthoDiv4Txt4">3. Once we receive your aligners, it is time to wear them! We will check your progress periodically and give you new sets of aligners as you go. For a minimum of 22 hours a day, these aligners will be worn until we evaluate your progress.</p>
             </div>
+        </div>
+
+
+    </div>
+</div>
+
+    <button class="carouselButton carouselR">
+        <img src="arrowR.JPG" alt="Right arrow to move slide right">
+    </button>
+
+</div>
+
+        <div class="carouselNav">
+            <button class="carouselIndicator current_Slide"></button>
+            <button class="carouselIndicator"></button>
+            <button class="carouselIndicator"></button>
+            <button class="carouselIndicator"></button>
         </div>
 
         <!-- <h4>We are pleased to offer this full range of orthodontic services to all our neighbors in the New Haven, Connecticut, area and to the students and faculty of Yale and New Haven Universities. To learn more about any of our restorative or cosmetic services, please call Albania Dental at (203) 777-9668 today.</h4> -->
