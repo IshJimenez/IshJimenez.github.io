@@ -114,3 +114,93 @@ dotsNav.addEventListener('click', e => {
     updateDots(currentDot, targetDot)
     hideShowArrows(slides, preButton, nextButton, targetIndex);
 })
+
+// Carousel 2
+
+const track2 = document.querySelector('.carouselTrack2');
+const slides2 = Array.from(track2.children);
+const nextButton2 = document.querySelector('.carouselR2');
+const preButton2 = document.querySelector('.carouselL2');
+const dotsNav2 = document.querySelector('.carouselNav2')
+const dots2 = Array.from(dotsNav2.children);
+
+const slideWidth2 = slides2[0].getBoundingClientRect().width;
+
+const setSlidePosition2 = (slide2, index) => {
+    slide2.style.left = slideWidth2 * index + 'px';
+}
+
+slides2.forEach(setSlidePosition2);
+
+const move2Slide2 = (track2, currentSlide2, targetSlide2) => {
+    track2.style.transform = 'translateX(-' + targetSlide2.style.left + ')';
+    currentSlide2.classList.remove('current_Slide2');
+    targetSlide2.classList.add('current_Slide2')
+}
+
+const updateDots2 = (currentDot2, targetDot2) => {
+    currentDot2.classList.remove('current_Slide2');
+    targetDot2.classList.add('current_Slide2');
+}
+
+const hideShowArrows2 = (slides2, preButton2, nextButton2, targetIndex2) => {
+    if (targetIndex2 === 0) {
+        preButton2.classList.add('is-hidden2')
+        nextButton2.classList.remove('is-hidden2')
+    } else if (targetIndex2 === slides2.length -1) {
+        preButton2.classList.remove('is-hidden2')
+        nextButton2.classList.add('is-hidden2')
+    } else {
+        preButton2.classList.remove('is-hidden2');
+        nextButton2.classList.remove('is-hidden2')
+    }
+}
+
+///////////////////////////////////////////////////////////////////
+// Click left slides go left
+preButton2.addEventListener('click', e => {
+    const currentSlide2 = track2.querySelector('.current_Slide2');
+    const preSlide2 = currentSlide2.previousElementSibling;
+    const currentDot2 = dotsNav2.querySelector('.current_Slide2')
+    const preDot2 = currentDot2.previousElementSibling;
+    const preIndex2 = slides2.findIndex(slide2 => slide2 === preSlide2)
+
+    move2Slide2(track2, currentSlide2, preSlide2);  
+    updateDots2(currentDot2, preDot2)  
+    hideShowArrows2(slides2, preButton2, nextButton2, preIndex2); 
+})
+
+
+///////////////////////////////////////////////////////////////////
+// Click right slides go right
+nextButton2.addEventListener('click', e => {
+    const currentSlide2 = track2.querySelector('.current_Slide2');
+    const nextSlide2 = currentSlide2.nextElementSibling;
+    const currentDot2 = dotsNav2.querySelector('.current_Slide2')
+    const nextDot2 = currentDot2.nextElementSibling;
+    const nextIndex2 = slides2.findIndex(slide2 => slide2 === nextSlide2)
+
+    move2Slide2(track2, currentSlide2, nextSlide2);  
+    updateDots2(currentDot2, nextDot2) 
+    hideShowArrows2(slides2, preButton2, nextButton2, nextIndex2); 
+})
+
+////////////////////////////////////////////////////////////////////
+// Dot indicators change as you click
+
+dotsNav2.addEventListener('click', e => {
+    // What indicator is clicked
+    const targetDot2 = e.target.closest('button');
+
+    if (!targetDot2) return;
+   
+    const currentSlide2 = track2.querySelector('.current_Slide2');
+    const currentDot2 = dotsNav2.querySelector('.current_Slide2');
+    const targetIndex2 = dots2.findIndex(dot2 => dot2 === targetDot2)
+    const targetSlide2 = slides2[targetIndex2];
+
+    move2Slide2(track2, currentSlide2, targetSlide2); 
+    updateDots2(currentDot2, targetDot2);
+    hideShowArrows2(slides2, preButton2, nextButton2, targetIndex2);
+
+})

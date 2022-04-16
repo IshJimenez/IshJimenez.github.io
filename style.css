@@ -268,6 +268,74 @@ nav ul ul li a {
   .is-hidden {
     display: none;
   }
+  /* ---------------------------------------------------- Carousel2 --------------------------------------------------------------- */
+
+  .carousel2{
+    position: relative;
+    height: 400px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .carouselTrackContainer2 {
+    /* background-color: red; */
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .carouselTrack2 {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+  }
+  .carouselSlide2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;    
+  }
+  .carouselButton2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+  }
+
+  .carouselButton2 img {
+    width: 13px;
+  }
+  .carouselL2 {
+    left: -20px;
+    cursor: pointer;
+  }
+  .carouselR2 {
+    right: -20px;
+    cursor: pointer;
+  }
+  .carouselNav2 {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .carouselIndicator2 {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(0,0,0,.3);
+    margin: 0 15px;
+    cursor: pointer;
+  }
+  .carouselIndicator2.current_Slide2 {
+    background-color: rgba(0,0,0,.75);
+  }
+  .is-hidden2 {
+    display: none;
+  }
   /* --------------------------------------------------------------------------------------------------------------------------- */
   /* ---------------------------------------------------- Footer --------------------------------------------------------------- */
   .gFooterContainer {
@@ -865,7 +933,13 @@ form input, form textarea {
   line-height: 200%;
   text-transform: uppercase;
 }
-.teethSection img {
+
+.teethMainImg {
+  border-radius: var(--mainImgBR);
+  height: var(--mainImgH);
+  width: var(--mainImgW);
+}
+.teethNotArrowImg {
   border-radius: var(--mainImgBR);
   height: var(--mainImgH);
   width: var(--mainImgW);
@@ -896,10 +970,10 @@ form input, form textarea {
   padding-bottom: 2%;
 }
 .teethDiv2 {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr;
-  background-color: var(--main-color2);
+  grid-template-rows: 2fr; */
+  /* background-color: var(--main-color2); */
   
 }
 .teethDiv2 p{
@@ -927,6 +1001,13 @@ form input, form textarea {
 .teethEnd {
   padding: 2%;
   background-color: var(--main-color3);
+}
+
+.teethCarousel {
+  position: relative;
+  height: 500px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------- */

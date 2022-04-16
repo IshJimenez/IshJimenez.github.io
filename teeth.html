@@ -54,7 +54,7 @@
             </nav>
     </header>
     <section class="teethSection">
-        <img src="teethMainPic.JPG" alt="Picture of Opalescence Go Whitening Trays">
+        <img src="teethMainPic.JPG" class="teethMainImg" alt="Picture of Opalescence Go Whitening Trays">
         <h1>Opalescence Go Whitening Trays</h1>
 
             <div>
@@ -65,11 +65,11 @@
 
         <div class="teethMPicDiv">
             <div class="teethMPic1">
-                <img src="teethP1-1.JPG">
+                <img src="teethP1-1.JPG" class="teethNotArrowImg">
                 <h3>UltraFit tray before</h3>
             </div>
             <div class="teethMPic2">   
-                <img src="teethP1-2.JPG">
+                <img src="teethP1-2.JPG" class="teethNotArrowImg">
                 <h3>UltraFit tray after 10 mi</h3>
             </div>
         </div>
@@ -88,19 +88,28 @@
 
         <div class="teethMPicDiv2"> 
             <div class="teethMPic2-1">
-                <img src="teethP2-1.JPG" alt="Before teeth whitening picture">
+                <img src="teethP2-1.JPG" alt="Before teeth whitening picture" class="teethNotArrowImg">
                 <h3>Before Opalescence Go whitening</h3>
             </div>
-            <div class="teethMPic2-2"> 
-                <img src="teethP2-2.JPG" alt="Before teeth whitening picture">
+            <div class="teethMPic2-2">
+                <img src="teethP2-2.JPG" alt="Before teeth whitening picture" class="teethNotArrowImg">
                 <h3>After Opalescence Go whitening</h3>
             </div>
         </div>
 
-        <h1>About Teeth Whitening</h1>
+        <h1>About Teeth Whitening</h1>  
+
+        <div class="teethCarousel">
+            <button class="carouselButton carouselL is-hidden">
+                <img src="arrowL.JPG" alt="Left arrow to move slide left">
+            </button>
         
-        <div class="teethDiv2">
-            <div class="teethDiv2-1">
+        <div class="carouselTrackContainer" >
+            <div class="carouselTrack">
+        
+        <!-- <div class="teethDiv2"> -->
+
+            <div class="teethDiv2-1 carouselSlide current_Slide">
             <h3>What causes tooth discoloration?</h3>
                 <p>Many factors make teeth lose their luster. Genetics is one factor; some people just have whiter teeth than others. Other factors include cigarettes, dark foods and beverages (including coffee, soda, tea, and red wine), age, medications (such as tetracycline), and tooth trauma. </p>
             <h3>How does teeth whitening work?</h3>
@@ -109,7 +118,8 @@
             <h3>How long do whitening results last?</h3>
                 <p>Whitening results typically last several years. If your teeth start to discolor again over time, you can simply repeat a whitening treatment.</p>
             </div>
-            <div class="teethDiv2-2">
+
+            <div class="teethDiv2-2 carouselSlide">
             <h3>Will whitening cause tooth sensitivity?</h3>
                 <p>Some people experience sensitivity while whitening, but many do not. Sensitivity does not mean damage has been caused to your teeth. It is temporary and typically disappears within a few days.</p>
                 <p>Opalescence whitening gel also contains unique ingredients designed to make your whitening experience as comfortable as possible. Your dentist can provide you with additional desensitizing treatments if you experience lingering discomfort.</p>
@@ -118,7 +128,23 @@
             <h3>Who can whiten?</h3>
                 <p>Almost anyone can successfully whiten their teeth. Opalescence whitening treatments are effective at treating discoloration caused by age, food and drink, cigarettes, medication, or tooth trauma. We also see patients of all ages whiten successfully—from teenagers to 90-year-olds. </p>
             </div>
+
+        <!-- </div> -->
+            </div>
         </div>
+
+        <button class="carouselButton carouselR">
+            <img src="arrowR.JPG" alt="Right arrow to move slide right">
+        </button>
+    
+    
+    </div>
+
+    <div class="carouselNav">
+        <button class="carouselIndicator current_Slide"></button>
+        <button class="carouselIndicator"></button>
+    </div>
+
 
         <div class="teethEnd">
         <h2>Whiten Your Smile Today!</h2>
