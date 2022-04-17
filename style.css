@@ -20,6 +20,9 @@
   --mainImgBR: 100px;
   --mainImgH: 200px;
   --mainImgW: 200px;
+  --ImgBodySmlBR: 75px;
+  --ImgBodySmlH: 150px;
+  --ImgBodySmlW: 150px;
   --minWidth198: 380px;
   --minWidth720: 720px;
 }
@@ -1505,9 +1508,53 @@ form input, form textarea {
   .build{
       display: grid;
       grid-template-columns: 1fr;
+      /* grid-template-rows: 7% 1fr 1fr; */
       line-height: 200%;
   }
-  
+  .heroContainer {
+      grid-row-start: 1;
+      grid-row-end: 2;
+  }
+  .heroButton {
+    top: 18%;
+    left: 88%;
+    font-size: 10px;
+    padding: 6px 12px;
+
+  }
+  .welcomeAr1 p{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .welcomeAr1 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .welcomeA1Pic {
+    padding-top: 2%;
+    padding-bottom: 0;
+  }
+ 
+  .welcomeA1Pic img {
+    border-radius: var(--ImgBodySmlBR);
+    height: var(--ImgBodySmlH);
+    width: var(--ImgBodySmlW);
+  }
+  .welcomeAr2Pic {
+    height: 80px;
+    margin-bottom: 60px;
+  }
+  .welcomeAr2Pic img{
+    border-radius: var(--ImgBodySmlBR);
+    height: var(--ImgBodySmlH);
+    width: var(--ImgBodySmlW);
+  }
+  .welcomeA2Item h3{
+    padding-bottom: 20px;
+  }
+  .carousel {
+    height: 600px;
+  }
   .starsFrontPage {
     margin-right: 3%;
   }
@@ -1516,13 +1563,27 @@ form input, form textarea {
   /* ---------------------------------------------------- Footer --------------------------------------------------------------- */
 
 
-/* ---------------------------------------------------- hrsDirections --------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------- hrsDirections --------------------------------------------------------------- */
 .hrsDContainer{
   width: 375px;
 }
+.hrsDContainer p{
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 0;
+  margin-right: 15px;
+}
+.hrsDD img{
+  border-radius: var(--ImgBodySmlBR);
+  height: var(--ImgBodySmlH);
+  width: var(--ImgBodySmlW);
+}
+.hrsDContainer h1 {
+  padding-top: 10px;
+}
 .hrsDD {
-  padding: 20px 0px;
+  padding-top: 20px; 
 }
 .hrsDP{
   margin: 20px;
@@ -1530,15 +1591,76 @@ form input, form textarea {
 #map {
  width:50%;
 }
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------- drJ --------------------------------------------------------------- */
+.drImgDiv {
+  padding-top: 20px; 
+}
+.drImgDiv img{
+  border-radius: var(--ImgBodySmlBR);
+  height: var(--ImgBodySmlH);
+  width: var(--ImgBodySmlW);
+}
+.drPicContainer h1{
+  padding-top: 10px; 
+}
+.drPicContainer p{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------- Covid --------------------------------------------------------------- */
+.covidImgDiv {
+  padding-top: 20px;
+}
+.covidImgDiv img{
+  border-radius: var(--ImgBodySmlBR);
+  height: var(--ImgBodySmlH);
+  width: var(--ImgBodySmlW);
+}
+.covidTxt {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.covidTxtP1 {
+  margin-top: 30px;
+}
+.covidTxtP2 {
+  margin-bottom: 30px;
+}
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------- Insurance --------------------------------------------------------------- */
+.insurImgTxt {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.insurImgDiv {
+  padding-top: 20px; 
+}
+.insurImgDiv img {
+  border-radius: var(--ImgBodySmlBR);
+  height: var(--ImgBodySmlH);
+  width: var(--ImgBodySmlW);
+}
+.insurSection h1 {
+  padding-top: 10px; 
+}
+.insurImgTxt  p{
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------- General and Preventative --------------------------------------------------------------- */
-.generalSection {
- 
+.generalMainNonArrowImg, .generalNonArrowImg{
+  border-radius: var(--ImgBodySmlBR);
+  height: var(--ImgBodySmlH);
+  width: var(--ImgBodySmlW);
 }
 .general1Div {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 51% 8% 40%;
+  grid-template-rows: 5% 1fr 1fr;
 }
 .generalSecTxt h1{
   letter-spacing: 3px;
@@ -1547,59 +1669,51 @@ form input, form textarea {
   padding-right: 1%;
   overflow-wrap: break-word;
   font-size: 250%;
+  padding-top: 10px;
 }
-.g1Txt {
-  margin-bottom: 10%;
-}
-.g1Txt2_1 {
-  margin-top: 0;
-  padding-top: 0;
+.carouselGeneral {
+  height: 3500px;
 }
 .g1pic {
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
   margin-bottom: 0;
 }
-.g1Pic img {
- margin-top: 0;
- padding-top: 0;
+.g1Txt {
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 .g1Txt2 {
   grid-row-start: 3;
   grid-row-end: 4;
-  margin-top: 0;
 }
+
 .g2Div {
   display: grid;
-  grid-template-columns: 85%;
-  grid-template-rows: 48% 13% 5%;
-}
-.g2Div h2 {
-  letter-spacing: 3px;
-  line-height: 150%;
-}
-.g2Div p, .g3Div p{
-  margin-left: 4%;
-  margin-right: 4%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5% 1fr 1fr;
 }
 .g2Pic {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-bottom: 0;
+}
+.g2Pic img {
+  margin-left: 0;
+}
+.g2Txt {
   grid-row-start: 2;
   grid-row-end: 3;
-  margin-top: 92%;
-  margin-left: 12%;
+
 }
-.g2Pic img{
- justify-content: center;
- margin-left: 4%;
-}
+
 .g2Li {
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 1;
-  margin-top: 95%;
-  margin-left: 20%;
-  height: 10px;
 }
+
+
 .g3Div {
   display: grid;
   grid-template-columns: 15%;
@@ -1672,7 +1786,7 @@ form input, form textarea {
   grid-row-end: 4;
   grid-column-start: 3;
   grid-column-end: -2;
-}
+} */
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------- Restorative --------------------------------------------------------------- */
 
