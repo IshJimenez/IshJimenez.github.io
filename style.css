@@ -219,8 +219,8 @@ nav ul ul li a {
     left: 88%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: var(--footer-color);
-    color: white;
+    background-color:orange;
+    color: black;
     font-size: 16px;
     padding: 12px 24px;
     border: none;
@@ -229,8 +229,9 @@ nav ul ul li a {
     text-align: center;
   }
   .heroButton:hover {
-    background-color: var(--main-color2);
-    color: black;
+    background-color: Var(--main-color3);
+    color: orange;
+    font-weight: bold;
   }
   /* ---------------------------------------------------- CarouselFrontPage --------------------------------------------------------------- */
 
@@ -622,7 +623,7 @@ form input, form textarea {
   font-size: 300%;
 }
 .generalSection p {
-  font-size: 150%;
+  /* font-size: 100%; */
   line-height: 200%;
   margin-left: 1%;
   margin-right: 1%;
@@ -641,6 +642,9 @@ form input, form textarea {
   grid-template-rows: 45% 1fr;
   background-color: var(--main-color2);
 }
+.general1DivB {
+  background-color: var(--main-color2);
+}
 .g2Div{
   display: grid;
   grid-template-columns: 1fr 60%;
@@ -651,6 +655,9 @@ form input, form textarea {
   display: grid;
   grid-template-columns: 60% 1fr;
   grid-template-rows: 46% 1fr;
+  background-color: var(--main-color4);
+}
+.g3BDiv {
   background-color: var(--main-color4);
 }
 .g4Div {
@@ -714,7 +721,7 @@ form input, form textarea {
   grid-row-start: 2;
 }
 .g2Li ul li {
-  font-size: 125%;
+  /* font-size: 125%; */
   line-height: 230%;
   list-style: none;
 }
@@ -774,7 +781,7 @@ form input, form textarea {
   padding-bottom: 3%;
 }
 .g6Li ul li {
-  font-size: 125%;
+  /* font-size: 125%; */
   line-height: 230%;
   list-style: none;
 }
@@ -863,7 +870,7 @@ form input, form textarea {
 }
 
 .restoSection p {
-  font-size: 150%;
+  /* font-size: 150%; */
   line-height: 200%;
   margin-left: 1%;
   margin-right: 1%;
@@ -901,6 +908,9 @@ form input, form textarea {
 .restoDiv3 {
   background-color: var(--main-color2);
 }
+.restoDiv4 {
+  background-color: var(--main-color4);
+}
 .restoDiv5 {
   background-color: var(--main-color2);
 }
@@ -909,6 +919,9 @@ form input, form textarea {
 }
 .restoDiv7 {
   background-color: var(--main-color2);
+}
+.restoDiv8 {
+  background-color: var(--main-color4);
 }
 .restoDiv9 {
   background-color: var(--main-color2);
@@ -921,6 +934,9 @@ form input, form textarea {
 }
 .resto2Div3{
   background-color: var(--main-color2);
+}
+.resto2Div4{
+  background-color: var(--main-color4);
 }
 .resto2Div5{
   background-color: var(--main-color2);
@@ -996,7 +1012,6 @@ form input, form textarea {
   text-transform: uppercase;
 }
 .teethSection p {
-  font-size: 150%;
   line-height: 200%;
 }
 .teethSection h3 {
@@ -1058,7 +1073,7 @@ form input, form textarea {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   padding: 2% 0 0% 0;
-  background-color: var(--main-color2);
+  background-color: var(--main-color4);
 }
 .teethMPicDiv2 h3 {
   padding-top: 2%;
@@ -1075,12 +1090,21 @@ form input, form textarea {
 }
 
 .teethCarousel {
+  height: 500px;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  background-color: var(--main-color2);
+  
+}
+.teethCarousel2 {
+  height: 300px;
   position: relative;
   height: 500px;
   width: 90%;
   margin: 0 auto;
+  background-color: var(--main-color3);
 }
-
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------- Special --------------------------------------------------------------- */
 .specialSection {
@@ -1099,7 +1123,6 @@ form input, form textarea {
   text-transform: uppercase;
 }
 .specialSection  p {
-  font-size: 150%;
   line-height: 200%;
 }
 .specialSection h2 {
@@ -1153,7 +1176,6 @@ form input, form textarea {
   text-transform: uppercase;
 }
 .orthoSection p {
-  font-size: 150%;
   line-height: 200%;
 }
 .orthoSection h2 {
@@ -1183,7 +1205,7 @@ form input, form textarea {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   padding: 2%;
-  background-color: var(--main-color2);
+  background-color: var(--main-color4);
 }
 .orthoDiv3 h3 {
   font-size: 150%;
@@ -1196,20 +1218,15 @@ form input, form textarea {
 }
 .orthoDiv4 {
   padding: 0 2% 0 2%;
+  background-color: var(--main-color2);
 }
 .orthoDiv4 h3{
   font-size: 150%;
   line-height: 200%;
   text-transform: uppercase;
 }
-.orthoDiv4Txt2, .orthoDiv4Txt3 {
-  margin-bottom: 1%;
-}
-
-.orthoDiv4Txt3, .orthoDiv4Txt4  {
-  margin-top: 1%;
-  padding-left: 15%;
-  padding-right: 15%;
+.orthoDiv5 {
+  background-color: var(--main-color3);
 }
 
 .carouselOrtho {
@@ -1305,7 +1322,7 @@ form input, form textarea {
   text-transform: uppercase;
 }
 .patientSection p {
-  font-size: 150%;
+
   line-height: 200%;
 }
 .patientSection h3 {
@@ -1339,12 +1356,13 @@ form input, form textarea {
   }
 
 /* HAMBURGER */
+
   #menuToggle
 {
   display: block;
   position: relative;
-  top: 20px;
-  left: 37px;
+  top: 15px;
+  left: 15px;
   
   z-index: 1;
   
@@ -1388,7 +1406,7 @@ form input, form textarea {
   position: relative;
   margin-left: 0%;
   
-  background: rgb(15, 248, 15);
+  background: orange;
   border-radius: 3px;
   
   z-index: 1;
@@ -1412,7 +1430,7 @@ form input, form textarea {
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: rgb(15, 248, 15);
+  background: orange;
 }
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
@@ -1491,7 +1509,7 @@ form input, form textarea {
 }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
   /* --------------------------------------------------------------------------------------------------------------------------- */
   /*----------------------------------------------------- Front Page ----------------------------------------------------------- */
   * h1{
@@ -1660,7 +1678,7 @@ form input, form textarea {
 .general1Div {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 5% 1fr 1fr;
+  grid-template-rows: 16% 1fr;
 }
 .generalSecTxt h1{
   letter-spacing: 3px;
@@ -1672,7 +1690,7 @@ form input, form textarea {
   padding-top: 10px;
 }
 .carouselGeneral {
-  height: 3500px;
+  height: 1150px;
 }
 .g1pic {
   grid-row-start: 1;
@@ -1683,15 +1701,37 @@ form input, form textarea {
   grid-row-start: 2;
   grid-row-end: 3;
 }
-.g1Txt2 {
-  grid-row-start: 3;
-  grid-row-end: 4;
+.g1Txt_2 {
+  padding-top: 20px;
 }
+.general1DivB {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 16% 1fr;
+}
+
+.g1PicB {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-bottom: 0;
+  padding-top: 30px;
+}
+.g1BTxt2 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.g1BTxt2 p {
+  margin-right: 22px;
+}
+.g1BTxt2_2 {
+  padding-top: 20px;
+}
+
 
 .g2Div {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 5% 1fr 1fr;
+  grid-template-rows: 16% 1fr 1fr;
 }
 .g2Pic {
   grid-row-start: 1;
@@ -1704,46 +1744,69 @@ form input, form textarea {
 .g2Txt {
   grid-row-start: 2;
   grid-row-end: 3;
-
 }
-
+.g2Txt_2{
+  padding-top: 20px;
+}
 .g2Li {
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 1;
+  padding-top: 20px;
+  font-weight: bold;
 }
-
-
 .g3Div {
   display: grid;
-  grid-template-columns: 15%;
-  grid-template-rows: 41% 11% 25%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 16% 1fr;
 }
 .g3Pic {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.g3Pic img {
+  padding-top: 0px;
+  margin-top: 30px;
+}
+.g3Txt{
   grid-row-start: 2;
   grid-row-end: 3;
-  margin-top: 92%;
-  padding-left: 80%;
 }
-.g3Pic img{
-  justify-content: center;
-  margin-left: 80%;
- }
-.g3Txt2 {
-  grid-row-start: 3;
-  grid-row-end: 4;
-  grid-column-start: 1;
-  grid-column-end: 3;
+.g3Txt h2 {
+  margin-top: 3.109px;
+}
+.g3Txt_3 {
+  padding-top: 40px;
+}
+.g3BDiv {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 16% 1fr;
+}
+
+.g3BTxt2 h2 {
+  padding-top: 0;
+}
+.g3BPic {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding-top: 30px;
+}
+.g3BTxt2 {
+  padding-top: 20px;
 }
 .g4Div {
   display: grid;
-  grid-template-columns: 15%;
-  grid-template-rows: 8% 18% 78%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 16% 10% 1fr;
 }
 .g4Pic {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.g4DivH2 {
   grid-row-start: 2;
   grid-row-end: 3;
-  margin-left: 75%;
 }
 .g4Txt {
   grid-row-start: 3;
@@ -1751,42 +1814,83 @@ form input, form textarea {
   grid-column-start: 3;
   grid-column-end: -2;
 }
-.g4Txt p, .g5Txt p , .g6Li{
-  margin-bottom: 8%;
+.g4Txt_1 {
+  padding-bottom: 20px;
+}
+.g4Txt_2, .g4Txt_4 {
+  padding-top: 20px;
+}
+.g4Txt_3 {
+  padding: 20px 0;
 }
 .g5Div {
   display: grid;
-  grid-template-columns: 15%;
-  grid-template-rows: 6% 18% 78%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 16% 7% 1fr;
 }
-.g5Pic, .g6Pic, .g7Pic  {
+.g5Div h2 {
+  padding-bottom: 0;
+}
+.g5Pic, .g6Pic {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding-top: 20px;
+}
+.g5DivH2, .g6DivH2, .g7DivH2 {
   grid-row-start: 2;
   grid-row-end: 3;
-  margin-left: 75%;
 }
-.g5Txt, .g6Li, .g7Txt {
-  grid-row-start: 3;
-  grid-row-end: 4;
-  grid-column-start: 3;
-  grid-column-end: -2;
+.g5Txt_1 {
+  padding-bottom: 20px;
+}
+.g5Txt_2 {
+  padding-bottom: 20px;
+}
+.g5Txt_3 {
+  padding-bottom: 20px;
+}
+.g5Txt_4, .g5Txt_5 {
+  padding-bottom: 20px;
 }
 .g6Div {
   display: grid;
-  grid-template-columns: 15%;
-  grid-template-rows: 8% 20% 78%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 16% 10% 1fr;
+}
+.g6Pic {
+  padding-top: 0;
+}
+.g6LiUl {
+  padding-top: 50px;
+}
+.g6LiU2 {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.g6DivEndTxt {
+  padding-top: 50px;
 }
 .g7Div {
   display: grid;
-  grid-template-columns: 15%;
-  grid-template-rows: 8% 15% 68% 4%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 16% 15% 62% 4%;
   padding-bottom: 20%;
 }
-.g5Txt, .g6Li, .g7Txt {
+.g7Pic {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding-top: 0;
+}
+.g7DivH2 {
+  padding-top: 20px;
+}
+.g7Txt {
   grid-row-start: 3;
   grid-row-end: 4;
-  grid-column-start: 3;
-  grid-column-end: -2;
-} */
+}
+.g7Txt2 {
+  padding-top: 20px;
+}
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------- Restorative --------------------------------------------------------------- */
 
@@ -1800,35 +1904,169 @@ form input, form textarea {
 }
 .restoDiv1 {
   display: grid;
-  grid-template-columns: 15%;
-  grid-template-rows: 10% 22% 78%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 16% 1fr;
 }
-.restoDiv1h2 {
+.restoDivImg  img, .restoMainDiv img, 
+.notMainPic img, 
+.restoMainDiv img, .notMainPic2 img {
+  border-radius: var(--ImgBodySmlBR);
+  height: var(--ImgBodySmlH);
+  width: var(--ImgBodySmlW);
+}
+.restoCarousel {
+  height: 900px;
+}
+.restoDivImg {
   grid-row-start: 1;
   grid-row-end: 2;
-  overflow-wrap: normal;
-  padding-left: 135%;
+  margin-bottom: 0;
+  grid-column-start: -3;
+  padding-top: 20px;
 }
-.restoDivImg  {
+.restoDiv1h2 {
   grid-row-start: 2;
   grid-row-end: 3;
-  margin-right: 75%;
 }
 .restoDiv1P {
   grid-row-start: 3;
   grid-row-end: 4;
-  grid-column-start: 3;
-  grid-column-end: -2;
-  padding-bottom: 8%;
 }
-.restoDiv2, .restoDiv3, .restobasic {
+.restoDiv1Txt2 {
+  padding-top: 20px;
+}
+.restoDiv2 {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 20% 16% 1fr;
 }
-.restoDiv2Txt, .restoDiv3Txt {
+.restoDiv2 {
+  padding-top: 20px;
+}
+.restoDiv2Txt h2 {
+  padding-top: 0;
+}
+.restoDiv2Txt2 {
+  padding-top: 20px;
+}
+.restoDiv3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 1fr;
+}
+.restoDiv3Img {
   grid-row-start: 1;
   grid-row-end: 2;
+  margin-bottom: 0;
+  grid-column-start: -3;
+  padding-top: 20px;
+}
+.restoDiv3Txt {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.restoDiv3Txt2 {
+  padding-top: 20px;
+}
+.restoDiv4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 1fr;
+}
+.restoDiv4Img {
+  padding-top: 20px;
+}
+.restoDiv4Txt2 {
+  padding-top: 20px;
+}
+.restoDiv5 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 16% 1fr;
+}
+.restoDiv5Img {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding-top: 20px;
+}
+.restoDiv5Txt2 {
+  padding-top: 20px;
+}
+.restoDiv6 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 16% 1fr;
+}
+.restoDiv6Img {
+  padding-top: 20px;
+}
+.restoDiv6Txt2 {
+  padding-top: 20px;
+}
+.restoDiv7 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 16% 1fr;
+}
+.restoDiv7Img {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding-top: 20px;
+}
+.restoDiv7Txt2 {
+  padding-top: 20px;
+}
+.restoDiv8 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 16% 1fr;
+}
+.restoDiv8Img {
+  padding-top: 20px;
+}
+.restoDiv8Txt2 {
+  padding-top: 20px;
+}
+.restoDiv9 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 16% 1fr;
+}
+.restoDiv9Img {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding-top: 20px;
+}
+.restoDiv9Txt2 {
+  padding-top: 20px;
+}
+.restoCarousel2 {
+  height: 800px;
+}
+.restobasic2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 24% 1fr;
+}
+.restobasic2 h2 {
+  padding-top: 10px;
+}
+.notMainPic2{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding-top: 20px;
+}
+.resto2Div1Txt2, .resto2Div2Txt2, 
+.resto2Div3Txt2, .resto2Div4Txt2,
+.resto2Div5Txt2 {
+  padding-top: 20px;
+}
+.resto2Div5Txt h2{
+  padding-left: 5px;
+  margin-right: 5px;
+}
+.resto2Div5 p{
+  margin-right: 18px;
 }
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------- Teeth --------------------------------------------------------------- */
@@ -1842,43 +2080,44 @@ form input, form textarea {
 }
 .teethMPicDiv {
   display: grid;
-  grid-template-columns: 30%;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
 }
-
-.teethMPic1 h3 {
-margin-left: 30px;
-width: 200px;
+.teethMainImgDiv img, .teethMainImgDiv2 img {
+  border-radius: var(--ImgBodySmlBR);
+  height: var(--ImgBodySmlH);
+  width: var(--ImgBodySmlW);
 }
-.teethMPic2 {
-  padding-left: 50%;
+.teethMPic1,  .teethMPic2{
+  padding-left: 0;
+  padding-right: 0;
 }
-.teethMPic2 h3{
-  margin-left: 30px;
-  width: 200px;
+.teethCarousel2 {
+  height: 1100px;
+}
+.teethDiv1 h3, .teethDiv1 p{
+  padding-top: 40px;
+}
+.teethDiv1B h3, .teethDiv1B p {
+  padding-top: 20px;
 }
 .teethMPicDiv2 {
   display: grid;
-  grid-template-columns: 40%;
-  grid-template-rows: 1fr;
-}
-.teethMPicDiv2 h3 {
-  width: 300px;
-  padding-right: 40px;
-}
-.teethMPic2{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: -40%;
-}
-.teethMPic2-2 {
-  margin-left: 50px;
-}
-.teethDiv2 {
-  display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 49% 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.teethMPic2-1, .teethMPic2-2 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.teethMainImgDiv2 {
+  padding-top: 20px;
+}
+.teethCarousel {
+  height: 1100px;
+}
+.teethDiv2-2 h3, .teethDiv2-2 p {
+  padding-top: 20px;
 }
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------- Ortho --------------------------------------------------------------- */
@@ -1891,24 +2130,37 @@ width: 200px;
   overflow-wrap: break-word;
   font-size: 250%;
 }
+.orthoMainImg, .orthoNotArrowImg{
+  border-radius: var(--ImgBodySmlBR);
+  height: var(--ImgBodySmlH);
+  width: var(--ImgBodySmlW);
+}
+
 .orthoDiv1, .orthoDiv2, .orthoDiv3 {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 29% 1fr;
+  grid-template-rows: 25% 1fr;
+  padding-top: 20px;
+}
+.carouselOrtho {
+  height: 700px;
 }
 .orthoDiv2Img {
   grid-row-start: 1;
   grid-row-end: 2;
 }
-.orthoDiv2Txt {
-  padding-top: 10%;
-  margin-bottom: -8%;
+.orthoDiv4 h3{
+  padding-top: 20px;
 }
-.orthoDiv3 {
-  padding-bottom: 8%;
+
+.orthoDiv5 p{
+  padding-top: 20px;
 }
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------- Patient --------------------------------------------------------------- */
+.carouselPatient {
+  height: 300px;
+}
 .stars {
   width: 20%;
 }
