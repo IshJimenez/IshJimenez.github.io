@@ -2229,82 +2229,12 @@ form input, form textarea {
   padding-top: 30%;
 }
 }
-/* ___________________________________________________________________________________________________________________________ */
-/* __________________________________________________min-width: 760px_________________________________________________________ */
-/* ___________________________________________________________________________________________________________________________ */
-@media screen and (min-width: 451px) {
-  /* --------------------------------------------------------------------------------------------------------------------------- */
-  /*----------------------------------------------------- Front Page ----------------------------------------------------------- */
-  .welcomeAr3 p{
-    margin-top: 0;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-  .welcomeAr3 img {
-    padding-top: .5%;
-    margin-left: 3%;
-  }
-  .starsFP2  {
-    padding-bottom: 1%;
-  }
-
-  /* --------------------------------------------------------------------------------------------------------------------------- */
-/* -------------------------------------------------- Book --------------------------------------------------------------- */
-  .bookSection{
-    display: grid;
-    grid-template-columns: 1fr 20%;
-    grid-template-rows: 1fr;
-    background-color: var(--main-color3);
-  }
-  .formContainer{
-    background-color: var(--main-color);
-    background-color: var(--main-color3);
-  }
-  .formC {
-    padding-left: 20%;
-    background-color: var(--main-color3);
-    
-  }
-  #phone, #name, #email, #message {
-    background-color: var(--footer-color);
-  }
-  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: white;
-  }
-  ::-moz-placeholder { /* Firefox 19+ */
-    color: white;
-  }
-  :-ms-input-placeholder { /* IE 10+ */
-    color: white;
-  }
-  :-moz-placeholder { /* Firefox 18- */
-    color: white;
-  }
-  #message {
-    padding-bottom: 60px;
-  }
-  .submitBut {
-    margin-top: 10%;
-  }
-  .storeHrs {
-    height: 650px;
-    margin-bottom: 10%;
-    margin-top: 10%;
-  }
-  .dayM {
-    margin-top: 0;
-    padding-top: 0;
-  }
-
-  }
-  
-
   
   /* ___________________________________________________________________________________________________________________________ */
-  /* __________________________________________________max-width: 950px_________________________________________________________ */
+  /* __________________________________________________min-width: 451px_________________________________________________________ */
   /* ___________________________________________________________________________________________________________________________ */
   
-  @media screen and (max-width: 950px) {
+  @media screen and (min-width: 451px) {
   /* --------------------------------------------------------------------------------------------------------------------------- */
   /*----------------------------------------------------- Hamburger ----------------------------------------------------------- */
   
@@ -2569,15 +2499,38 @@ form input, form textarea {
 }
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------- Book --------------------------------------------------------------- */
-.formContainer {
+.bookSection{
+  display: grid;
+  grid-template-columns: 1fr 20%;
+  grid-template-rows: 1fr;
+  background-color: var(--main-color3);
+}
+.formContainer{
+  background-color: var(--main-color3);
   margin-top: 80px;
 }
 .formC {
+  background-color: var(--main-color3);
   width: 600px;
   height: 920px;
   margin-left: 0px;
   padding-left: 0;
   margin-top: 130px;
+}
+#phone, #name, #email, #message {
+  background-color: var(--footer-color);
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
 }
 .storeHrsBook {
   margin-top: 120px;
