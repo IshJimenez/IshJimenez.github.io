@@ -716,6 +716,7 @@ form input, form textarea {
   grid-column-start: 2;
   margin-top: -2%;
   margin-bottom: 5%;
+  font-weight: bold;
 }
 .g2Pic {
   grid-column-start: 0;
@@ -1020,7 +1021,9 @@ form input, form textarea {
   line-height: 200%;
   text-transform: uppercase;
 }
-
+.teethDiv1 h3, .teethDiv1B h3, .teethDiv2-1 h3, .teethDiv2-2 h3 {
+  color: white;
+}
 .teethMainImg {
   border-radius: var(--mainImgBR);
   height: var(--mainImgH);
@@ -1130,11 +1133,13 @@ form input, form textarea {
   font-size: 200%;
   line-height: 200%;
   text-transform: uppercase;
+  color: white;
 }
 .specialSection h3  {
   font-size: 150%;
   line-height: 200%;
   text-transform: uppercase;
+  color: white;
 }
 .specialSection  img {
   border-radius: var(--mainImgBR);
@@ -1142,10 +1147,13 @@ form input, form textarea {
   width: var(--mainImgW);
 }
 .special2 {
+  background-color: var(--main-color3);
+}
+.special1 {
   background-color: var(--main-color2);
 }
 .special3{
-  background-color: var(--main-color3);
+  background-color: var(--main-color4);
 }
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------- Ortho --------------------------------------------------------------- */
@@ -1183,6 +1191,10 @@ form input, form textarea {
   font-size: 150%;
   line-height: 200%;
   text-transform: uppercase;
+  color: white;
+}
+.orthoSection h3 {
+  color: white;
 }
 .orthoDiv1 {
   display: grid;
@@ -1273,6 +1285,7 @@ form input, form textarea {
   margin: 2%;
   padding-bottom: 2%;
   letter-spacing: 2px;
+  color: white;
 }
 .popupB {
   text-transform: uppercase;
@@ -2168,6 +2181,18 @@ form input, form textarea {
 .stars {
   width: 20%;
 }
+#popup {
+  top: 50%;
+  left: 45%;
+  width: 70%;
+  height: 50%;
+}
+#popup img {
+  border-radius: 25px;
+  height: 50px;
+  width: 50px;
+}
+
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------- Book --------------------------------------------------------------- */
 .formContainer {
@@ -2207,7 +2232,7 @@ form input, form textarea {
 /* ___________________________________________________________________________________________________________________________ */
 /* __________________________________________________min-width: 760px_________________________________________________________ */
 /* ___________________________________________________________________________________________________________________________ */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 451px) {
   /* --------------------------------------------------------------------------------------------------------------------------- */
   /*----------------------------------------------------- Front Page ----------------------------------------------------------- */
   .welcomeAr3 p{
@@ -2337,7 +2362,225 @@ form input, form textarea {
     grid-row-start: 0;
     grid-row-end: 1;
     margin-top: 60px;
+  } 
+  .g2Div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 30% 1fr;
+  }
+  .g2Pic img{
+    margin-left: 0;
+  }
+  .g2Txt {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-top: 120px;
+  }
+  .g2Li {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    padding-top: 130px;
+  }
+  .gBase2Div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 1fr;
+  }
+  .g7Div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 1fr;
+  }
+  .g7DivH2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .g7Txt {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .g7Txt2 {
+    padding-bottom: 40px;
+  }
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/*-----------------------------------------------------  Restorative  ----------------------------------------------------------- */  
+  .notMainPic img {
+    border-radius: var(--ImgBodyMBR);
+    height: var(--ImgBodyMlH);
+    width: var(--ImgBodyMlW);
   }
 
+.restoDiv1  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1% 1% 50%;
+  }
+  .notMainPic {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    margin: 0;
+  }
+  .restoDivImg img {
+    margin-top: -20px;
+  }
+  .restoDiv1h2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    padding-top: 280px;
+  }
+  .restoDiv1P {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    padding-top: 370px;
+  }
+  .restBaseDiv {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45% 1fr;
+  }
+  .notMainPic {
+    margin-top: 40px;
+  }
+  .restoCarousel2 {
+    height: 650px;
+  }
+  .notMainPic2 img{
+    border-radius: var(--ImgBodyMBR);
+    height: var(--ImgBodyMlH);
+    width: var(--ImgBodyMlW);
+  }
+  .notMainPic2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-top: 40px;
+  }
+  .restobasic2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 47% 1fr;
+  }
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/*-----------------------------------------------------  Teeth ----------------------------------------------------------- */  
+  .teethDiv1 h3{
+    padding-top: 55px;
+  }
+  .teethDiv1B h3 {
+    padding-top: 25px;
+  }
+  .teethMPicDiv2 {
+    width: 98%;
+  }
+  .teethMPic1 {
+    padding-left: 50px;
+  }
+  .teethMPic2 {
+    padding-right: 50px;
+  }
+  .teethMPic2-1 {
+    width: 110%;
+    padding-left: 50px;
+  }
+  .teethMPic2-2 {
+    padding-right: 50px;
+  }
+  .teethMainImgDiv2 {
+    padding-top: 40px;
+  }
+  .teethMainImgDiv2 img{
+    border-radius: var(--ImgBodyMBR);
+    height: var(--ImgBodyMlH);
+    width: var(--ImgBodyMlW);
+  }
+  .teethDiv2-1 h3, .teethDiv2-2 h3{
+    padding-top: 20px;
+  }
+  .teethEnd {
+    width: 98%;
+  }
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------- Ortho --------------------------------------------------------------- */
+  .carouselOrtho {
+    height: 550px;
+  }
+  .orthoBaseDiv {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 1fr;
+  }
+  .orthoNonArrowImg {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .orthoNonArrowImg img{
+    border-radius: var(--ImgBodyMBR);
+    height: var(--ImgBodyMlH);
+    width: var(--ImgBodyMlW);
+  }
+  .orthoBaseDiv h2 {
+    padding-top: 200px;
+  }
+  .orthoDiv2Img {
+    padding-top: 20px;
+  }
+  .orthoDiv3Img {
+    padding-top: 20px;
+  }
+  .orthoDiv4 h3 {
+    padding-top: 80px;
+  }
+  .orthoDiv5 p {
+    padding-top: 60px;
+  }
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------- Special --------------------------------------------------------------- */
+  /* .specialSection {
+    height: 1050px;
+  } */
+  .specialSection h2, .specialSection h3 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .special2P {
+    padding-bottom: 30px;
+  }
+  .special2P {
+    padding-top: 30px;
+  }
+  .special3Div {
+    padding-bottom: 100px;
+  }
+  /* --------------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------- Patient --------------------------------------------------------------- */
+.patientBut1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.carouselPatient {
+  height: 430px;
+}
+.review h3 {
+  padding-top: 140px;
+}
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------- Book --------------------------------------------------------------- */
+.formContainer {
+  margin-top: 80px;
+}
+.formC {
+  width: 600px;
+  height: 920px;
+  margin-left: 0px;
+  padding-left: 0;
+  margin-top: 130px;
+}
+.storeHrsBook {
+  margin-top: 120px;
+}
 }
   
