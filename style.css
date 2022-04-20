@@ -10,10 +10,10 @@
   --hm2-width: 80px;
   --hm3-width: 50px;
   --hm4-width: 107px;
-  --main-color: #bfd1d2;
-  --main-color2: #abd7d8;
-  --main-color3: #67a9a9;
-  --main-color4: #349e9e;
+  --main-color: #d8eaeb;
+  --main-color2: #edf4f5;
+  --main-color3: #99c0c5;
+  --main-color4: #dab968;
   --footer-color: #2b7379;
   --footer-color2: #3a3b3d;
   --newNavColor: #3a3b3d;
@@ -26,6 +26,9 @@
   --ImgBodyMBR: 125px;
   --ImgBodyMlH: 250px;
   --ImgBodyMlW: 250px;
+  --ImgBodyLBR: 125px;
+  --ImgBodyL1H: 250px;
+  --ImgBodyL1W: 250px;
 }
 * h1, * h2 {
   text-transform: uppercase;
@@ -179,7 +182,9 @@ nav ul ul li a {
   .welcomeAr2{
       padding-top: 20px;
   }
-
+  .welcomeA2Item h3 {
+    color: black;
+  }
   .welcomeA2Item p {
       padding: 10px;
       margin: 5px;
@@ -198,12 +203,20 @@ nav ul ul li a {
       text-align: center;
       padding-top: 10px;
   }
+  .welcomeAr3 h2 {
+    color: white;
+    margin: 30px;
+  }
   .welcomeAr3 p {
-      padding: 1%;
-      margin: 1%;
+      margin: 0;
+      padding: 0;
+  }
+  .welcomeAr3B {
+    margin-top: -180px;
   }
   .starsFrontPage {
-    margin-right: 3%;
+    margin: 0;
+    padding: 0;
   }
   .heroImg1 {
     width: 100%;
@@ -216,7 +229,7 @@ nav ul ul li a {
   }
   .heroButton {
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 88%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -238,7 +251,7 @@ nav ul ul li a {
 
   .carousel{
     position: relative;
-    height: 400px;
+    height: 450px;
     width: 90%;
     margin: 0 auto;
   }
@@ -396,32 +409,62 @@ nav ul ul li a {
   .footerM {
       padding: 20px;
   }
+  .gFooterContainer {
+    background-color: var(--footer-color2);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 1fr 1fr;
+    color: white;
+    text-align: center;
+  }
   
+  .gFooterL p{
+    margin-top: 1%;
+  }
+  
+  .gFooterM h2{
+    margin-top: .5%;
+    margin-bottom: .5%;
+  }
+  
+  .gFooterM p{
+    padding-bottom: .5%;
+  }
+  
+  .gFooterR {
+    margin-top: 1%;
+  }
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------- Book --------------------------------------------------------------- */
+.bookSection {
+  background: var(--main-color);
+}
 .formContainer{
   display: grid;
-        grid-template-columns: 10fr 1fr; 
-        grid-template-rows: 1fr;
-        grid-column-gap: 2fr;
+        grid-template-columns: 1fr 45%; 
+        grid-template-rows: 1fr 50%;
         background: var(--main-color);
 }
 
 
 .formC {
-  height: 70vh;
+  width: 75%;
   background: var(--main-color);
   display: flex;
   justify-content: center;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin-left: 200px;
 }
 form {
   background: var(--main-color3);
   display: flex;
   flex-direction: column;
   padding: 2vw 4vw;
-  width: 90%;
   max-width: 600px;
-  border-radius: 10px;
+  border-radius: 20px;
+  height: 800px;
+  width: 100%;
 }
 form h2{
   color: var(--footer-color);
@@ -443,6 +486,7 @@ form input, form textarea {
   outline: none;
   background: var(--main-color);
   font-size: 16px;
+  max-width: 600px;
 }
 .submitBut {
   padding: 15px;
@@ -456,21 +500,32 @@ form input, form textarea {
   margin: 20px auto;
   border-radius: 30px;
 }
+.storeHrsBook {
+  padding-bottom: 10px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 400px;
+}
+#mapBook2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------- StoreHrs --------------------------------------------------------------- */
 
 .storeHrs {
   background-color: var(--footer-color);
   margin-left: 50px;
-  padding: 50px;
+  padding: 0;
   color: white;
   border-radius: 10px;
-  height: 655px;
+  height: 500px;
+  margin-top: 140px;
 }
 .storeHrs p {
   display: flex;
   justify-content: center;
-  margin: 10px 10px;
+  margin-top: 6px;
   text-transform: uppercase;
 }
 .storeHrsD p{
@@ -478,8 +533,8 @@ form input, form textarea {
 }
 .day {
   padding-top: 20px;
-  /* color: #c29400; */
   font-weight: 600;
+  letter-spacing: 3px;
 }
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------- HrsDirections --------------------------------------------------------------- */
@@ -576,6 +631,7 @@ form input, form textarea {
   text-align: center;
   background-color: var( --main-color);
   justify-content: center;
+  height: 80%;
 }
 .covidImgDiv {
   padding-top: 30px;
@@ -586,7 +642,7 @@ form input, form textarea {
   width: var(--mainImgW);
 }
 .covidTxt {
-  padding: 25px 50px;
+  padding: 50px 50px;
   line-height: 200%;
 }
 .covidTxtP1{
@@ -604,7 +660,6 @@ form input, form textarea {
   line-height: 200%;
   padding-right: 2%;
   padding-left: 2%; 
-  /* height: 5400px; */
 }
 .generalSecImg {
   padding-top: 30px;
@@ -615,16 +670,15 @@ form input, form textarea {
   width: 200px;
 }
 .generalNonArrowImg {
-  border-radius: 175px;
-  height: 350px;
-  width: 350px;
+  border-radius: var(--ImgBodyLBR);
+  height: var(--ImgBodyL1H);
+  width: var(--ImgBodyL1W);
 }
 .generalSection h1 {
   padding: 20px;
   font-size: 300%;
 }
 .generalSection p {
-  /* font-size: 100%; */
   line-height: 200%;
   margin-left: 1%;
   margin-right: 1%;
@@ -634,31 +688,73 @@ form input, form textarea {
   font-size: 200%;
   margin-bottom: 1%;
   margin-top: 1%;
-  color: white;
   letter-spacing: 3px;
 }
-.general1Div {
+.g2Txt h2, .g3Txt h2, .g3BTxt2 h2, .g4DivH2, .g6DivH2{
+  color: white
+}
+.carouselGeneral {
+  position: relative;
+    height: 700px;
+    width: 90%;
+    margin: 0 auto;
+}
+.gBaseL  {
   display: grid;
-  grid-template-columns: 60% 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 45% 1fr;
   background-color: var(--main-color2);
+  padding-left: 100px;
+  padding-right: 100px;
 }
 .general1DivB {
   background-color: var(--main-color2);
 }
+.gNonPicL {
+  grid-row-start: 0;
+  grid-row-end: 1;
+  padding-top: 40px;
+}
+.g1Txt_1, .g1Txt_2 {
+  padding-bottom: 2%;
+}
+.g1Txt2_2, .g1BTxt2_2 {
+  padding-top: 2%;
+}
 .g2Div{
   display: grid;
   grid-template-columns: 1fr 60%;
-  grid-template-rows: 46% 2fr;
+  grid-template-rows: 36% 2fr;
   background-color: var(--main-color3);
 }
-.g3Div {
-  display: grid;
-  grid-template-columns: 60% 1fr;
-  grid-template-rows: 46% 1fr;
-  background-color: var(--main-color4);
+.g2Txt {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
-.g3BDiv {
+
+.g2Txt_2 {
+  padding-top: 1%;
+}
+.g2Li {
+  grid-column-start: 2;
+  font-weight: bold;
+}
+.g2Pic {
+  grid-column-start: 0;
+  grid-row-start: 2;
+}
+
+.g2Li ul li {
+  line-height: 230%;
+  list-style: none;
+}
+.g2Pic img{
+  margin-top: 5%;
+  margin-left: 60%;
+}
+.g3Div, .g3BDiv{
   background-color: var(--main-color4);
 }
 .g4Div {
@@ -666,142 +762,76 @@ form input, form textarea {
 }
 .g4Div, .g5Div {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 18% 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 18% 1fr 1fr;
 }
 .g5Div {
   background-color: var(--main-color2);
 }
-.g6Div {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 15% 1fr;
-  background-color: var(--main-color3);
-}
-.g7Div {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 10% 1fr 10%;
-  background-color: var(--main-color2);
-  padding-top: .5%;
-  padding-bottom: 0%;
-}
-.g1Txt, .g2Txt, .g3Txt {
-  grid-column-start: 1;
-  grid-column-end: 3;
+.g4DivH2, .g5DivH2 {
   grid-row-start: 1;
   grid-row-end: 2;
 }
-
-.g1Txt_1, .g1Txt_2 {
-  padding-bottom: 1%;
+.g4Pic, .g5Pic{
+  grid-row-start: 0;
+  grid-row-end: 1;
+  padding-top: 40px;
 }
-.g1Txt2_1 {
-  padding-top: 5%;
+.g4Pic img, .g5Pic img, .g6Pic img, .g7Pic img {
+  border-radius: var(--ImgBodyLBR);
+  height: var(--ImgBodyL1H);
+  width: var(--ImgBodyL1W);
 }
-.g1Txt2_2 {
-  padding-top: 2%;
+.g6Div {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  grid-template-rows: 25% 1fr;
+  background-color: var(--main-color3);
 }
-.g1Pic img {
-  margin-top: 10%;
+.g6Pic {
+  padding-left: 150px;
 }
-
-.g2Div h2 {
-  /* margin-top: -2%; */
+.g6DivH2 {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding-top: 20px;
 }
-.g2Txt_2 {
-  padding-top: 1%;
-}
-.g2Li {
-  grid-column-start: 2;
-  margin-top: -2%;
-  margin-bottom: 5%;
+.g6LiU2{
   font-weight: bold;
 }
-.g2Pic {
-  grid-column-start: 0;
-  grid-row-start: 2;
-}
-.g2Li ul li {
-  /* font-size: 125%; */
-  line-height: 230%;
-  list-style: none;
-}
-.g2Pic img{
-  margin-top: 10%;
-  margin-left: 60%;
-}
-
-.g3Txt h2{
- margin-top: 2%;
-}
-
-.g3Txt_2 {
-  padding-top: 1%;
-  margin-bottom: 3%;
-}
-.g3Pic img{
-  margin-top: 15%;
-}
-.g4Div h2{
-  grid-column-start: 0;
-  grid-row-start: 1;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-.g4Pic img{
- margin-top: 10%;
-}
-.g5Div h2 {
-  grid-column-start: 0;
-  grid-row-start: 1;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-.g5Txt {
- 
-}
-.g5Txt p {
- 
-}
-.g5Pic img {
-  margin-top: 5%;
-}
-.g6Div h2 {
-  grid-column-start: 0;
-  grid-row-start: 1;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  margin-top: -0%;
-}
-.g6Li p{
-
+.g6LiP {
+  padding-right: 60px;
 }
 .g6LiUl {
   padding-top: 2%;
   padding-bottom: 3%;
+  padding-right: 100px;
 }
 .g6Li ul li {
-  /* font-size: 125%; */
   line-height: 230%;
   list-style: none;
 }
-.g6Pic img{
-  margin-top: 10%;
+.g6DivEndTxt {
+  padding-right: 60px;
 }
-
-.g7Div h2{
+.g7Div {
+  display: grid;
+  grid-template-columns: 1fr 40%;
+  grid-template-rows: 5% 1fr 10%;
+  background-color: var(--main-color2);
+  padding-top: .5%;
+  padding-bottom: 0%;
+}
+.g7DivH2{
   grid-column-start: 0;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
-  margin-top: -0%;
-  margin-bottom: 1%;
-
 }
-.g7Txt p {
- 
+.g7Txt {
+ padding-top: 125px;
+ padding-left: 50px;
 }
 .g7Pic img{
   margin-top: 10%;
@@ -810,41 +840,6 @@ form input, form textarea {
   grid-column-start: 1;
   grid-column-end: 3;
 }
-.gFooterContainer {
-  background-color: var(--footer-color2);
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 15% 1fr 1fr;
-  color: white;
-  text-align: center;
-}
-
-.gFooterL p{
-  margin-top: 1%;
-}
-
-.gFooterM h2{
-  margin-top: .5%;
-  margin-bottom: .5%;
-}
-
-.gFooterM p{
-  padding-bottom: .5%;
-}
-
-.gFooterR {
-  margin-top: 1%;
-}
-
-/* ---------------------------------------------------- CarouselGeneral --------------------------------------------------------------- */
-
-.carouselGeneral {
-  position: relative;
-    height: 1000px;
-    width: 90%;
-    margin: 0 auto;
-}
-
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------- Restorative --------------------------------------------------------------- */
 
@@ -867,10 +862,16 @@ form input, form textarea {
   font-size: 200%;
   margin-bottom: 1%;
   margin-top: 1%;
-  color: white;
   letter-spacing: 3px;
 }
-
+.restoDiv2Txt h2, .restoDiv4 h2, 
+.restoDiv6 h2, .restoDiv8 h2, 
+.resto2Div2 h2, .resto2Div4 h2 {
+  color: white;
+}
+.restoDiv1P {
+  padding-top: 20px;
+}
 .restoSection p {
   /* font-size: 150%; */
   line-height: 200%;
@@ -886,23 +887,38 @@ form input, form textarea {
   width: 200px;
 }
 .restoNotArrowImg {
-  border-radius: 175px;
-  height: 350px;
-  width: 350px;
-}
-.notMainPic {
-  margin: 2%;
+  border-radius: var(--ImgBodyLBR);
+  height: var(--ImgBodyL1H);
+  width: var(--ImgBodyL1W);
 }
 .restoDiv1 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 20% 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 45% 20% 1fr;
   background-color: var(--main-color2);
 }
-.restoDiv2, .restoDiv3 {
+.restoDiv1H2 {
+  grid-row-start:2;
+  grid-row-end: 3;
+  margin: 2%;
+}
+.restoDiv1P {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.restoDivImg {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding-top: 40px;
+}
+.restBaseDiv {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 20% 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50% 1fr;
+}
+.restoBaseImg  {
+  grid-row-start: 1;
+  padding-top: 40px;
 }
 .restoDiv2 {
   background-color: var(--main-color3);
@@ -945,53 +961,31 @@ form input, form textarea {
 }
 .restobasic {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 20% 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50% 1fr;
 }
-.restoDiv1h2 h2 {
-  grid-column-start: 1;
-  grid-column-end: -3;
-  grid-row-start:1;
-  grid-row-end: 2;
-  margin: 2%;
+.restobasic2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50% 1fr;
 }
-.restoDiv1P {
-  grid-column-start: 2;
-  grid-column-end: -3;
-  grid-row-start: -2;
-  grid-row-end: -1;
-}
-.restoDivImg {
-  grid-column-start: 2;
-  grid-column-end: -1;
+.restoBaseImg {
   grid-row-start: 1;
-  grid-row-end: -1;
-  padding-top: 2%;
+  padding-top: 40px;
 }
-.restoDiv2Img img{
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-.restoDiv2Txt h2, .restoDiv3Txt h2, .restobasic h2{
-  margin: 2%;
-}
-.restobasic p{
-  padding-bottom: 2%;
-}
+
 
 /* ---------------------------------------------------- CarouselResto --------------------------------------------------------------- */
 
 .restoCarousel {
   position: relative;
-  height: 650px;
+  height: 550px;
   width: 90%;
   margin: 0 auto;
 }
 .restoCarousel2 {
   position: relative;
-  height: 500px;
+  height: 550px;
   width: 90%;
   margin: 0 auto;
 }
@@ -1021,7 +1015,7 @@ form input, form textarea {
   line-height: 200%;
   text-transform: uppercase;
 }
-.teethDiv1 h3, .teethDiv1B h3, .teethDiv2-1 h3, .teethDiv2-2 h3 {
+.teethDiv1 h3, .teethDiv1B h3 {
   color: white;
 }
 .teethMainImg {
@@ -1030,6 +1024,14 @@ form input, form textarea {
   width: var(--mainImgW);
 }
 .teethNotArrowImg {
+  border-radius: var(--mainImgBR);
+  height: var(--mainImgH);
+  width: var(--mainImgW);
+}
+.teethMainImgDiv2 {
+  padding-top: 40px;
+}
+.teethMainImg2 {
   border-radius: var(--mainImgBR);
   height: var(--mainImgH);
   width: var(--mainImgW);
@@ -1094,7 +1096,7 @@ form input, form textarea {
 }
 
 .teethCarousel {
-  height: 500px;
+  height: 350px;
   position: relative;
   width: 90%;
   margin: 0 auto;
@@ -1102,9 +1104,8 @@ form input, form textarea {
   
 }
 .teethCarousel2 {
-  height: 300px;
   position: relative;
-  height: 500px;
+  height: 300px;
   width: 90%;
   margin: 0 auto;
   background-color: var(--main-color3);
@@ -1133,13 +1134,11 @@ form input, form textarea {
   font-size: 200%;
   line-height: 200%;
   text-transform: uppercase;
-  color: white;
 }
-.specialSection h3  {
+.specialSection h2  {
   font-size: 150%;
   line-height: 200%;
   text-transform: uppercase;
-  color: white;
 }
 .specialSection  img {
   border-radius: var(--mainImgBR);
@@ -1191,9 +1190,8 @@ form input, form textarea {
   font-size: 150%;
   line-height: 200%;
   text-transform: uppercase;
-  color: white;
 }
-.orthoSection h3 {
+.orthoDiv2 h2, .orthoDiv3 h2 {
   color: white;
 }
 .orthoDiv1 {
@@ -1202,6 +1200,9 @@ form input, form textarea {
   grid-template-rows: 1fr;
   padding: 2%;
   background-color: var(--main-color2);
+}
+.orthoDiv1 h2 {
+  padding-top: 60px;
 }
 .orthoDiv1Img img {
   margin-top: 2%;
@@ -1213,6 +1214,9 @@ form input, form textarea {
   padding: 2%;
   background-color: var(--main-color3);
 }
+.orthoDiv2 h2 {
+  padding-top: 60px;
+}
 .orthoDiv3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1220,18 +1224,22 @@ form input, form textarea {
   padding: 2%;
   background-color: var(--main-color4);
 }
-.orthoDiv3 h3 {
+.orthoDiv3 h2{
   font-size: 150%;
   line-height: 200%;
   text-transform: uppercase;
+  padding-top: 60px;
 }
 .orthoDiv3 li {
   font-size: 150%;
   line-height: 200%;
 }
 .orthoDiv4 {
-  padding: 0 2% 0 2%;
+  padding: 1% 2% 0 2%;
   background-color: var(--main-color2);
+}
+.orthoDiv4 h3 {
+  padding-top: 50px;
 }
 .orthoDiv4 h3{
   font-size: 150%;
@@ -1241,10 +1249,12 @@ form input, form textarea {
 .orthoDiv5 {
   background-color: var(--main-color3);
 }
-
+.orthoDiv5 p{
+  padding-top: 60px;
+}
 .carouselOrtho {
   position: relative;
-  height: 600px;
+  height: 450px;
   width: 90%;
   margin: 0 auto;
 }
@@ -1355,7 +1365,7 @@ form input, form textarea {
 }
 .carouselPatient {
   position: relative;
-  height: 250px;
+  height: 150px;
   width: 90%;
   margin: 0 auto;
 }
@@ -1548,11 +1558,10 @@ form input, form textarea {
       grid-row-end: 2;
   }
   .heroButton {
-    top: 23%;
+    top: 25%;
     left: 88%;
     font-size: 10px;
     padding: 6px 12px;
-
   }
   .welcomeAr1 p{
     margin-left: 10px;
@@ -1585,7 +1594,7 @@ form input, form textarea {
     padding-bottom: 20px;
   }
   .carousel {
-    height: 600px;
+    height: 700px;
   }
   .starsFrontPage {
     margin-right: 3%;
@@ -2198,20 +2207,22 @@ form input, form textarea {
 .formContainer {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 49%;
-  margin-bottom: 25%;
+  grid-template-rows: 1fr 29% 24%;;
 }
 .formC {
   margin-top: 10%;
   text-align: center;
+  margin-left: 0;
+  grid-column-end: 1;
+  width: 100%;
 }
 .storeHrs {
-  margin-right: 15%;
-  margin-top: 0%;
-  margin-bottom: 0%;
-  padding-top: 2%;
-  padding-bottom: 0%;
   background-color: var(--main-color2);
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  width: 75%;
+  margin-top: 0;
 }
 .storeHrs p {
   color: black;
@@ -2222,19 +2233,20 @@ form input, form textarea {
   line-height: 75%;
   letter-spacing: 3px;
 }
+.dayM p{
+  padding-top: 10px;
+}
 .bookBody {
   background-color: var(--main-color);
 }
-.dayM {
-  padding-top: 30%;
-}
+
 }
   
   /* ___________________________________________________________________________________________________________________________ */
   /* __________________________________________________min-width: 451px_________________________________________________________ */
   /* ___________________________________________________________________________________________________________________________ */
   
-  @media screen and (min-width: 451px) {
+  @media screen and (min-width: 451px) and (max-width: 950px) {
   /* --------------------------------------------------------------------------------------------------------------------------- */
   /*----------------------------------------------------- Hamburger ----------------------------------------------------------- */
   
@@ -2244,7 +2256,7 @@ form input, form textarea {
   /* --------------------------------------------------------------------------------------------------------------------------- */
   /*----------------------------------------------------- Front Page ----------------------------------------------------------- */
   .heroButton{
-    top: 23%;
+    top: 28%;
   }
   .carousel {
     height: 500px;
@@ -2265,7 +2277,7 @@ form input, form textarea {
     height: 1100px;
   }
   /* --------------------------------------------------------------------------------------------------------------------------- */
-  /*----------------------------------------------------- Covid ----------------------------------------------------------- */
+  /*----------------------------------------------------- Insurance ----------------------------------------------------------- */
   .insurImgTxt {
     padding-left: 0;
     padding-right: 0;
@@ -2500,22 +2512,22 @@ form input, form textarea {
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------- Book --------------------------------------------------------------- */
 .bookSection{
-  display: grid;
-  grid-template-columns: 1fr 20%;
-  grid-template-rows: 1fr;
   background-color: var(--main-color3);
 }
 .formContainer{
   background-color: var(--main-color3);
-  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 24% 15%;
 }
 .formC {
   background-color: var(--main-color3);
-  width: 600px;
-  height: 920px;
+  width: 100%;
+  height: 520px;
   margin-left: 0px;
   padding-left: 0;
-  margin-top: 130px;
+  margin-top: 50px;
+  grid-column-end: 3;
 }
 #phone, #name, #email, #message {
   background-color: var(--footer-color);
@@ -2533,7 +2545,16 @@ form input, form textarea {
   color: white;
 }
 .storeHrsBook {
-  margin-top: 120px;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-column-end: 3;
+  margin-left: 250px;
 }
+.submitBut {
+  
+}
+#mapBook2 {
+  grid-row-start: 4;
+  }
 }
   
