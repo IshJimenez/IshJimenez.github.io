@@ -865,7 +865,8 @@ form input, form textarea {
   letter-spacing: 3px;
 }
 .restoDiv2Txt h2, .restoDiv4 h2, 
-.restoDiv6 h2, .restoDiv8 h2, 
+.restoDiv6 h2, .restoDiv6B h2, 
+.restoDiv8 h2, 
 .resto2Div2 h2, .resto2Div4 h2 {
   color: white;
 }
@@ -918,7 +919,10 @@ form input, form textarea {
 }
 .restoBaseImg  {
   grid-row-start: 1;
-  padding-top: 40px;
+  padding-top: 0px;
+}
+.restoDivImg, .restoDiv2Img, .restoDiv3Img {
+  margin-top: 40px;
 }
 .restoDiv2 {
   background-color: var(--main-color3);
@@ -932,7 +936,7 @@ form input, form textarea {
 .restoDiv5 {
   background-color: var(--main-color2);
 }
-.restoDiv6 {
+.restoDiv6, .restoDiv6B, .restoDiv6C {
   background-color: var(--main-color3);
 }
 .restoDiv7 {
@@ -962,7 +966,7 @@ form input, form textarea {
 .restobasic {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50% 1fr;
+  grid-template-rows: 40% 1fr;
 }
 .restobasic2 {
   display: grid;
@@ -971,15 +975,18 @@ form input, form textarea {
 }
 .restoBaseImg {
   grid-row-start: 1;
-  padding-top: 40px;
+  padding-top: 30px;
 }
-
+.restoDiv6 h2, .restoDiv6B h2{
+  padding-top: 20px;
+  margin-bottom: 0;
+}
 
 /* ---------------------------------------------------- CarouselResto --------------------------------------------------------------- */
 
 .restoCarousel {
   position: relative;
-  height: 550px;
+  height: 700px;
   width: 90%;
   margin: 0 auto;
 }
@@ -1629,9 +1636,7 @@ form input, form textarea {
 .hrsDP{
   margin: 20px;
 }
-#map {
- width:50%;
-}
+
 /* -------------------------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------- drJ --------------------------------------------------------------- */
 .drImgDiv {
@@ -1698,10 +1703,14 @@ form input, form textarea {
   height: var(--ImgBodySmlH);
   width: var(--ImgBodySmlW);
 }
+.gBaseL {
+  padding-left: 0;
+  padding-right: 0;
+}
 .general1Div {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 16% 1fr;
+  grid-template-columns: 99%;
+  grid-template-rows: 1% 1fr;
 }
 .generalSecTxt h1{
   letter-spacing: 3px;
@@ -1786,6 +1795,7 @@ form input, form textarea {
 .g3Pic {
   grid-row-start: 1;
   grid-row-end: 2;
+  padding-top: 0;
 }
 .g3Pic img {
   padding-top: 0px;
@@ -1822,6 +1832,11 @@ form input, form textarea {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 16% 10% 1fr;
+}
+.g4Pic img, .g5Pic img {
+  border-radius: var(--ImgBodySmlBR);
+  height: var(--ImgBodySmlH);
+  width: var(--ImgBodySmlW);
 }
 .g4Pic {
   grid-row-start: 1;
@@ -1880,11 +1895,24 @@ form input, form textarea {
   grid-template-columns: 1fr;
   grid-template-rows: 16% 10% 1fr;
 }
+.g6Pic img, .g7Pic img {
+  border-radius: var(--ImgBodySmlBR);
+  height: var(--ImgBodySmlH);
+  width: var(--ImgBodySmlW);
+}
 .g6Pic {
-  padding-top: 0;
+  padding-top: 40px;
+  padding-left: 0;
+}
+.g6Li {
+  grid-row-start: 3;
+}
+.g6LiP {
+  padding-right: 0;
 }
 .g6LiUl {
   padding-top: 50px;
+  padding-right: 0;
 }
 .g6LiU2 {
   padding-bottom: 10px;
@@ -1892,6 +1920,7 @@ form input, form textarea {
 }
 .g6DivEndTxt {
   padding-top: 50px;
+  padding-right: 0;
 }
 .g7Div {
   display: grid;
@@ -1904,12 +1933,15 @@ form input, form textarea {
   grid-row-end: 2;
   padding-top: 0;
 }
+
 .g7DivH2 {
   padding-top: 20px;
 }
 .g7Txt {
   grid-row-start: 3;
   grid-row-end: 4;
+  padding-top: 0;
+  padding-left: 0;
 }
 .g7Txt2 {
   padding-top: 20px;
@@ -1938,7 +1970,7 @@ form input, form textarea {
   width: var(--ImgBodySmlW);
 }
 .restoCarousel {
-  height: 900px;
+  height: 1050px;
 }
 .restoDivImg {
   grid-row-start: 1;
@@ -1963,11 +1995,9 @@ form input, form textarea {
   grid-template-columns: 1fr;
   grid-template-rows: 20% 16% 1fr;
 }
-.restoDiv2 {
-  padding-top: 20px;
-}
+
 .restoDiv2Txt h2 {
-  padding-top: 0;
+  padding-top: 40px;
 }
 .restoDiv2Txt2 {
   padding-top: 20px;
@@ -2025,6 +2055,11 @@ form input, form textarea {
 }
 .restoDiv6Txt2 {
   padding-top: 20px;
+}
+.restoDiv6B {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 1fr;
 }
 .restoDiv7 {
   display: grid;
@@ -2367,7 +2402,7 @@ form input, form textarea {
   .restoDivImg img {
     margin-top: -20px;
   }
-  .restoDiv1h2 {
+  .restoDiv1H2 {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
@@ -2388,6 +2423,9 @@ form input, form textarea {
   }
   .notMainPic {
     margin-top: 40px;
+  }
+  .restoCarousel {
+    height: 775px;
   }
   .restoCarousel2 {
     height: 650px;
