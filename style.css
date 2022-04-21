@@ -135,7 +135,50 @@ nav ul ul li a {
   .build p {
     line-height: 200%;
   }
- 
+  .subMenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .subMenu h3 {
+    padding-top: 20px;
+  }
+  .generalSubDiv, .restoSubDiv,  
+  .teethSubDiv, .orthoSubDiv {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+  }
+  .generalSubDiv, .teethSubDiv {
+    padding-left: 500px;
+  }
+  .restoSubDiv, .orthoSubDiv{
+    padding-right: 500px;
+  }
+  .subDivImg {
+    border-radius: var(--ImgBodySmlBR);
+    height: var(--ImgBodySmlH);
+    width: var(--ImgBodySmlW);
+  }
+  .subMenu button {
+    margin: 20px 0;
+  }
+  .subMenu button {
+    padding: 15px;
+    background: var(--footer-color);
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto;
+    border-radius: 30px;
+  }
+  .subMenu button:hover {
+    background-color: orange;
+    color: black;
+  }
   .welcomeAr1 {
       display: grid;
       grid-template-columns: 1fr;
@@ -239,12 +282,12 @@ nav ul ul li a {
     padding: 12px 24px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 30px;
     text-align: center;
   }
   .heroButton:hover {
-    background-color: Var(--main-color3);
-    color: orange;
+    background-color: var(--footer-color);
+    color: white;
     font-weight: bold;
   }
   /* ---------------------------------------------------- CarouselFrontPage --------------------------------------------------------------- */
@@ -693,6 +736,7 @@ form input, form textarea {
 .g2Txt h2, .g3Txt h2, .g3BTxt2 h2, .g4DivH2, .g6DivH2{
   color: white
 }
+
 .carouselGeneral {
   position: relative;
     height: 700px;
@@ -1409,7 +1453,7 @@ form input, form textarea {
 }
 #menuToggle a:hover
 {
-  color: white;
+  color: black;
 }
 
 #menuToggle input
@@ -1565,10 +1609,25 @@ form input, form textarea {
       grid-row-end: 2;
   }
   .heroButton {
-    top: 25%;
+    top: 30%;
     left: 88%;
     font-size: 10px;
     padding: 6px 12px;
+  }
+  .subMenu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+.generalSubDiv, .restoSubDiv,  
+.teethSubDiv, .orthoSubDiv { 
+  padding-left: 0;
+  padding-right: 0;
+}
+  .subDivImg {
+    border-radius: var(--ImgBodySmlBR);
+    height: var(--ImgBodySmlH);
+    width: var(--ImgBodySmlW);
   }
   .welcomeAr1 p{
     margin-left: 10px;
@@ -2319,7 +2378,13 @@ form input, form textarea {
   }
   /* --------------------------------------------------------------------------------------------------------------------------- */
   /*-----------------------------------------------------  General and Preventative  ----------------------------------------------------------- */
-  
+.generalSubDiv,  
+.teethSubDiv { 
+  padding-left: 100px;
+}
+.restoSubDiv, .orthoSubDiv {
+  padding-right: 100px;
+}
   .gBaseDiv {
     display: grid;
     grid-template-columns: 1fr;
