@@ -4,9 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="New Haven Dentist Office. Call 203-777-9668 To Schedule" >
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Form Submission Success</title>
 </head>
 <body>
-    <h1>TEST</h1>
+    <header>
+        <nav role="navigation">
+            <div>
+                <p>
+                    <a href="index.html">
+            <img class="logo" src="mainLogo.JPG" alt="logo" onclick="">
+        </a>
+        </p>
+            </div>
+            <div id="menuToggle">
+            <input type="checkbox" class="intro"/>
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li>
+                    <a href="" class="navM1">PATIENT INFORMATION</a>
+                        <ul>
+                            <li><a href="hrsDirections.html">Hours/Directions</a></li>
+                            <li><a href="drJ.html">Dr.Jimenez</a></li>
+                            <li><a href="covid.html">Covid-19</a></li>
+                            <li><a href="insurance.html">Insurance</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    <a href="" class="navM2">OUR SERVICES</a>
+                        <ul>
+                            <li><a href="general.html">General/Preventative</a></li>
+                            <li><a href="restorative.html">Restorative/Cosmetic</a></li>
+                            <li><a href="teeth.html">Teeth Whitening</a></li>
+                            <li><a href="ortho.html">Orthodontics</a></li>
+                            <li><a href="special.html">Special Offers</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="location.href='patient.html'">
+                        <a href="patient.html" class="navM3">PATIENT REVIEWS</a> 
+                    </li>
+                    <li onclick="location.href='book.html'">
+                        <a href="book.html" class="navM4">BOOK NOW</a> 
+                    </li>
+            </ul>
+        </div>
+            </nav>
+    </header>
+    <section class="successSection">
+        <div class="successPic">
+            <img src="formSuccessMainPic.JPG" alt="Form Success Main Picture">
+        </div>
+        <div class="successDiv">
+            <h2>Your submission has been successful!</h2>
+            <p>Thanks! We have received your submission, and we'll be in touch really soon.</p>
+            <p>If you have any questions in the meanwhile call us 203-777-9668</p>
+        </div>
+    </section>
+    <footer>
+        <div class="gFooterContainer bookBase foCBase">
+    
+                <div class="gFooterL foCBaseL">
+                    <p>In-Office Financing available call us</p>
+                </div>
+                <div class="gFooterM foCBaseM">
+                    <h2>Albania Dental</h2>
+                    <p>Maria Jimenez, DDS1395 Chapel St,</p>
+                    <p>New Haven, CT 06511</p>
+                    <p>(203) 777-9668</p>
+                </div>
+                <div class="gFooterR foCBaseR">
+                    <a href="https://www.carecredit.com/apply/?sitecode=bb3bupc06182018">
+                        <img src="footerImg.JPG" alt="Picture when clicked leads to finnancing for service">
+                    </a>
+                </div>
+         
+        </div>
+    </footer>
 </body>
 </html>

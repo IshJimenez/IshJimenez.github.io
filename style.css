@@ -1423,6 +1423,37 @@ form input, form textarea {
   width: 90%;
   margin: 0 auto;
 }
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------- SuccessForm --------------------------------------------------------------- */
+.successSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 50%;
+  background-color: var(--main-color);
+}
+.successDiv {
+  text-align: center;
+  padding: 40px;
+}
+.successDiv h2 {
+  padding-bottom: 20px;
+}
+.successDiv p {
+  padding-bottom: 20px;
+}
+.successPic{
+  display: grid;
+  justify-content: center;
+  margin-top: 40px;
+}
+.successPic img {
+  border-radius: var(--ImgBodyLBR);
+  height: var(--ImgBodyL1H);
+  width: var(--ImgBodyL1W);
+}
+
+
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------- Main Page Body --------------------------------------------------------------- */
 
@@ -2651,11 +2682,23 @@ form input, form textarea {
   grid-column-end: 3;
   margin-left: 250px;
 }
-.submitBut {
-  
-}
+
 #mapBook2 {
   grid-row-start: 4;
   }
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------- SuccessForm --------------------------------------------------------------- */
+.successSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.successDiv {
+  padding-bottom: 250px;
+}
+.successPic {
+  padding-top: 250px;
+}
 }
   
