@@ -76,10 +76,10 @@ nav ul li :hover {
 
 }
 nav ul li a:hover {
-  color: white;
+  color: black;
 }
 nav ul ul li a:hover {
-  color: white;
+  color: black;
   box-shadow: none;
   text-align: center;
 }
@@ -1434,7 +1434,7 @@ form input, form textarea {
 }
 .successDiv {
   text-align: center;
-  padding: 40px;
+  padding: 51px;
 }
 .successDiv h2 {
   padding-bottom: 20px;
@@ -1445,7 +1445,7 @@ form input, form textarea {
 .successPic{
   display: grid;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 .successPic img {
   border-radius: var(--ImgBodyLBR);
