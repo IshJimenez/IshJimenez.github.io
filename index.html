@@ -7,6 +7,25 @@
     <meta name="description" content="New Haven Dentist Office. Dental Exams, Cleanings, Periodontal Care, Preventive Care, Fluoride Treatment and More. We Take Your Insurance. Call 203-777-9668 To Schedule" >
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+            Host : "smtp.gmail.com",
+            Username : "testingrobot245@gmail.com",
+            Password : "xqkiimxwbwrqybfb",
+            To : 'testingrobot245@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "New Contact Form Inquiry",
+            Body : "Name: " + document.getElementById("name").value
+            + "<br> Email: " + document.getElementById("email").value
+            + "<br> Phone no: " + document.getElementById("phone").value
+            + "<br> Message: " + document.getElementById("message").value
+            }).then(
+            message => alert("Message Sent Succesfully")
+    );
+        }
+    </script>
     <title>Albania Dental</title>
 </head>
 <body>
@@ -15,7 +34,7 @@
             <div>
                 <p>
                     <a href="index.html">
-            <img class="logo" src="mainLogo.JPG" alt="logo">
+            <img class="logo" src="mainLogo.JPG" alt="logo" onclick="">
         </a>
         </p>
             </div>
@@ -115,8 +134,6 @@
 
         </div>
 
-
-
         <div class="welcomeAr1">
             <div class="welcomeA1Item">
                 <h1>Welcome</h1>
@@ -177,6 +194,20 @@
             </div>
 
 
+                <div class="formC">
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                    <h2>CONTACT US</h2>
+                    <p class="formP">You can contact us about anything you need to.</p>
+                    <p class="formP">We’d love to hear from you!</p>
+                    <p class="formP">We’ll get back to you as soon as possible.</p>
+                    <p class="formP">203-777-9668</p>
+                        <input type="text" id="name" placeholder="Name" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <input type="text" id="phone" placeholder="Phone Number" required>
+                        <textarea id="message" rows="4" placeholder="How can we help you"></textarea>
+                        <button class="submitBut" type="submit">Submit</button>
+                    </form>
+                </div>
 
     </section>
     <footer>
