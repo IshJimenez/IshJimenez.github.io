@@ -1601,12 +1601,7 @@ form input, form textarea {
   .logo {
     width: 350px;
   }
-  .build{
-      display: grid;
-      grid-template-columns: 1fr;
-      /* grid-template-rows: 7% 1fr 1fr; */
-      line-height: 200%;
-  }
+
   .heroContainer {
       grid-row-start: 1;
       grid-row-end: 2;
