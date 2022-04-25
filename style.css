@@ -1165,6 +1165,64 @@ form input, form textarea {
   background-color: var(--main-color3);
 }
 /* --------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------- Emergency --------------------------------------------------------------- */
+.emerSect {
+  background-color: var(--main-color);
+  text-align: center;
+  line-height: 200%;
+}
+.emerPic img {
+  border-radius: var(--mainImgBR);
+  height: var(--mainImgH);
+  width: var(--mainImgW);
+}
+.bookButtonPages {
+  padding: 15px;
+  background: var(--footer-color);
+  color: white;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto;
+  border-radius: 30px;
+}
+.bookButtonPages:hover {
+  background-color: orange;
+  color: black;
+}
+.emerDiv {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 1fr 10% 10%;
+}
+.emerPic {
+  grid-row-start: 0;
+  grid-row-end: 1;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.emerDivH2 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding-bottom: 60px;
+}
+.emerTxt {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 50px;
+}
+.emerTxt2 {
+  padding-top: 20px;
+}
+.emerTxtEnd {
+  padding-top: 20px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------- Special --------------------------------------------------------------- */
 .specialSection {
   background-color: var(--main-color);
@@ -2269,6 +2327,14 @@ form input, form textarea {
   padding-top: 20px;
 }
 /* --------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------- Emergency --------------------------------------------------------------- */
+
+.emerTxtEnd {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------- Ortho --------------------------------------------------------------- */
 
 .orthoSection h1{
@@ -2577,6 +2643,17 @@ form input, form textarea {
   .teethEnd {
     width: 98%;
   }
+
+  /* --------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------- Emergency --------------------------------------------------------------- */
+.emerTxt {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 10%;
+}
+
+
+
+
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------- Ortho --------------------------------------------------------------- */
   .carouselOrtho {
