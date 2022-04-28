@@ -140,24 +140,20 @@ nav ul ul li a {
   }
   .subMenu {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
   .subMenu h3 {
     padding-top: 20px;
   }
   .generalSubDiv, .restoSubDiv,  
-  .teethSubDiv, .orthoSubDiv, .emerSubDiv {
+  .teethSubDiv, .orthoSubDiv, .drJSubDiv, 
+  .emerSubDiv{
     display: grid;
     justify-content: center;
     text-align: center;
   }
-  .generalSubDiv, .teethSubDiv {
-    padding-left: 500px;
-  }
-  .restoSubDiv, .orthoSubDiv{
-    padding-right: 500px;
-  }
+
   .subDivImg {
     border-radius: var(--ImgBodySmlBR);
     height: var(--ImgBodySmlH);
@@ -218,6 +214,9 @@ nav ul ul li a {
       border-radius: 125px;
       height: 250px;
       width: 250px;
+  }
+  .welcomeA1ItemP {
+    font-weight: 900;
   }
   .welcomeAr2 {
       background-color: var(--main-color2);
@@ -1052,11 +1051,37 @@ form input, form textarea {
   grid-template-columns: 1fr;
   grid-template-rows: 40% 1fr;
 }
+.resto2Div0 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20% 20% 1fr;
+}
+.restoDiv0Txt {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.restoDiv0Txt h2 {
+  padding-top: 180px;
+}
+.teethMPic2-1, .teethMPic2-2 {
+  padding-top: 150px;
+}
+.restoBaseImg {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.restoDiv0SubTxt {
+  padding-top: 0;
+}
 .resto2Div1 img {
   margin-top: 40px;
 }
-.resto2Div1 h3 {
-  padding-top: 40px;
+
+.resto2DivH3 {
+  padding-top: 70px;
+}
+.resto2Div2H3 {
+  padding-top: 70px;
 }
 .resto2DivTxt2 h3{
   padding-top: 70px;
@@ -2399,8 +2424,19 @@ form input, form textarea {
 .resto2Div3Img {
   margin-top: 0;
 }
-.teethMPicDiv2 {
-  padding-top: 40px;
+.resto2Div0 {
+  grid-template-columns: 1fr;
+  grid-template-rows: 7% 20% 20%;
+}
+.teethMPic2-1, .teethMPic2-2 {
+  grid-column-start: 1;
+  margin-top: 150px;
+}
+.resto2DivTxt1 {
+  grid-row-start: 1;
+}
+.resto2Div2H3 {
+  padding-top: 90px;
 }
 .restoNewImgDiv3 {
   margin-top: 20px;
@@ -2410,9 +2446,6 @@ form input, form textarea {
 }
 .resto2NewImgDiv img{
   margin-top: 20px;
-}
-.resto2DivTxt1 {
-  padding-top: 340px;
 }
 .resto2Div3 {
   grid-template-columns: 1fr;
@@ -2778,6 +2811,9 @@ form input, form textarea {
     border-radius: var(--ImgBodyMBR);
     height: var(--ImgBodyMlH);
     width: var(--ImgBodyMlW);
+  }
+  .teethMPic2-1, .teethMPic2-2 {
+    margin-top: 30px;
   }
   .restoDiv3 {
     grid-template-rows: 35% 1fr 1fr;
