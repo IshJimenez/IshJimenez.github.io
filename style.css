@@ -147,7 +147,7 @@ nav ul ul li a {
     padding-top: 20px;
   }
   .generalSubDiv, .restoSubDiv,  
-  .teethSubDiv, .orthoSubDiv {
+  .teethSubDiv, .orthoSubDiv, .emerSubDiv {
     display: grid;
     justify-content: center;
     text-align: center;
@@ -163,10 +163,10 @@ nav ul ul li a {
     height: var(--ImgBodySmlH);
     width: var(--ImgBodySmlW);
   }
-  .subMenu button {
+  .subDivButton{
     margin: 20px 0;
   }
-  .subMenu button {
+  .subDivButton{
     padding: 15px;
     background: var(--footer-color);
     color: white;
@@ -178,7 +178,7 @@ nav ul ul li a {
     margin: 20px auto;
     border-radius: 30px;
   }
-  .subMenu button:hover {
+  .subDivButton:hover {
     background-color: orange;
     color: black;
   }
