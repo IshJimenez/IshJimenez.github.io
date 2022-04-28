@@ -335,7 +335,7 @@ nav ul ul li a {
   }
 
   .carouselButton img {
-    width: 13px;
+    width: 16px;
   }
   .carouselL {
     left: -20px;
@@ -965,7 +965,21 @@ form input, form textarea {
   grid-column-start: 1;
   grid-column-end: 3;
 }
-
+.restoDiv3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 36% 30% 1fr;
+}
+.restoDiv3Img {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.restoDiv3Txt {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
 .restBaseDiv {
   display: grid;
   grid-template-columns: 1fr;
@@ -975,16 +989,19 @@ form input, form textarea {
   grid-row-start: 1;
   padding-top: 0px;
 }
-.restoDivImg, .restoDiv2Img, .restoDiv3Img {
+.restoDivImg, .restoDiv2Img {
   margin-top: 40px;
 }
 .restoDiv2 {
   background-color: var(--main-color3);
 }
+.resto2A h3, .resto2B h3 {
+  color: white;
+}
 .restoDiv3 {
   background-color: var(--main-color4);
 }
-.restoDiv3 h2 {
+.restoDiv3 h2, .restoDiv3ImgA h3, .restoDiv3ImgB h3 {
   color: white;
 }
 .restoDiv5 {
@@ -1013,6 +1030,7 @@ form input, form textarea {
 }
 .resto2Div1 h2, .resto2Div1 h3 {
   color: white;
+  text-transform:uppercase;
 }
 .resto2Div2{
   background-color: var(--main-color4);
@@ -1041,7 +1059,7 @@ form input, form textarea {
   padding-top: 40px;
 }
 .resto2DivTxt2 h3{
-  padding-top: 60px;
+  padding-top: 70px;
 }
 .resto2Div3 {
   display: grid;
@@ -2264,7 +2282,16 @@ form input, form textarea {
 .restoDiv3 {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 20% 1fr;
+  grid-template-rows: 15% 1fr 1fr;
+}
+.restoDiv3ImgA {
+  margin-top: 70px;
+}
+.restoDiv3ImgB {
+  margin-bottom: 50px;
+}
+.restoDiv3ImgA, .restoDiv3ImgB {
+  grid-column-start: 1;
 }
 .restoDiv3Img {
   grid-row-start: 1;
@@ -2514,7 +2541,9 @@ form input, form textarea {
   height: var(--ImgBodySmlH);
   width: var(--ImgBodySmlW);
 }
-
+.orthoNonArrowImg img {
+  margin-top: 40px;
+}
 .orthoDiv1, .orthoDiv2, .orthoDiv3 {
   display: grid;
   grid-template-columns: 1fr;
@@ -2743,6 +2772,12 @@ form input, form textarea {
     border-radius: var(--ImgBodyMBR);
     height: var(--ImgBodyMlH);
     width: var(--ImgBodyMlW);
+  }
+  .restoDiv3 {
+    grid-template-rows: 35% 1fr 1fr;
+  }
+  .restoDiv3Img {
+    margin-top: -5px;
   }
   .notMainPic2 {
     grid-row-start: 1;
