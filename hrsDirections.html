@@ -7,25 +7,6 @@
     <meta name="description" content="Meet The Team At Albania Dental in New Haven. Friendly and Professional Service Provided. Call To Schedule 203-777-9668">
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){
-            Email.send({
-            Host : "smtp.gmail.com",
-            Username : "testingrobot245@gmail.com",
-            Password : "xqkiimxwbwrqybfb",
-            To : 'testingrobot245@gmail.com',
-            From : document.getElementById("email").value,
-            Subject : "New Contact Form Inquiry",
-            Body : "Name: " + document.getElementById("name").value
-            + "<br> Email: " + document.getElementById("email").value
-            + "<br> Phone no: " + document.getElementById("phone").value
-            + "<br> Message: " + document.getElementById("message").value
-            }).then(
-            message => (window.location.href="formSuccess.html")
-    );
-        }
-    </script>
     <title>Hours and Directions</title>
 </head>
 <body>
@@ -55,13 +36,14 @@
                     </li>
                     <li>
                     <a href="" class="navM2">OUR SERVICES</a>
-                        <ul>
-                            <li><a href="general.html">General/Preventative</a></li>
-                            <li><a href="restorative.html">Restorative/Cosmetic</a></li>
-                            <li><a href="teeth.html">Teeth Whitening</a></li>
-                            <li><a href="ortho.html">Orthodontics</a></li>
-                            <li><a href="special.html">Special Offers</a></li>
-                        </ul>
+                    <ul>
+                        <li><a href="general.html">General/Preventative</a></li>
+                        <li><a href="restorative.html">Restorative/Cosmetic</a></li>
+                        <li><a href="root.html">Root Canal</a></li>
+                        <li><a href="emergency.html">Emergency Services</a></li>
+                        <li><a href="ortho.html">Orthodontics</a></li>
+                        <li><a href="special.html">Special Offers</a></li>
+                    </ul>
                     </li>
                 <li onclick="location.href='patient.html'">
                     <a href="patient.html" class="navM3">PATIENT REVIEWS</a> 
@@ -78,6 +60,9 @@
             <img class="hrsDImg" src="frontSideA.JPG" alt="Picture of front of store 1">
         </div>
         <h1>Hours and Directions</h1>
+        <a href="book.html">
+            <button class="bookButtonPages">BOOK NOW</button>
+        </a>
         <div>
             <div>
                 <p class="hrsDP hrsDP1">We’re located in Chapel West in a neighborhood of elegant, old houses and across the street from Saint Raphael Hospital. We’ve got plenty of off-street parking so it’s easy for you to come and go. If you’re new to Albania Dental, schedule your first visit and discover how comfortable and friendly we make it to keep your teeth and entire mouth in excellent condition.</p>
@@ -103,20 +88,6 @@
         </div>
         <div id="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11987.617874786001!2d-72.9417888!3d41.3109418!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1720166aca88ab48!2sAlbania%20Dental!5e0!3m2!1sen!2sus!4v1646125542723!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <div class="formC">
-            <form onsubmit="sendEmail(); reset(); return false;">
-            <h2>CONTACT US</h2>
-            <p class="formP">You can contact us about anything you need to.</p>
-            <p class="formP">We’d love to hear from you!</p>
-            <p class="formP">We’ll get back to you as soon as possible.</p>
-            <p class="formP">203-777-9668</p>
-                <input type="text" id="name" placeholder="Name" required>
-                <input type="email" id="email" placeholder="Email" required>
-                <input type="text" id="phone" placeholder="Phone Number" required>
-                <textarea id="message" rows="4" placeholder="How can we help you"></textarea>
-                <button class="submitBut" type="submit">Submit</button>
-            </form>
         </div>
     </section>
         <footer>

@@ -282,7 +282,7 @@ nav ul ul li a {
     background-color:orange;
     color: black;
     font-size: 16px;
-    padding: 12px 24px;
+    padding: 24px 36px;
     border: none;
     cursor: pointer;
     border-radius: 30px;
@@ -723,6 +723,7 @@ form input, form textarea {
 .generalSection h1 {
   padding: 20px;
   font-size: 300%;
+  padding-bottom: 0;
 }
 .generalSection p {
   line-height: 200%;
@@ -824,7 +825,7 @@ form input, form textarea {
   grid-row-end: 1;
   padding-top: 40px;
 }
-.g4Pic img, .g5Pic img, .g6Pic img, .g7Pic img {
+.g4Pic img, .g5Pic img, .g6Pic img {
   border-radius: var(--ImgBodyLBR);
   height: var(--ImgBodyL1H);
   width: var(--ImgBodyL1W);
@@ -862,31 +863,7 @@ form input, form textarea {
 .g6DivEndTxt {
   padding-right: 60px;
 }
-.g7Div {
-  display: grid;
-  grid-template-columns: 1fr 40%;
-  grid-template-rows: 5% 1fr 10%;
-  background-color: var(--main-color2);
-  padding-top: .5%;
-  padding-bottom: 0%;
-}
-.g7DivH2{
-  grid-column-start: 0;
-  grid-row-start: 1;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-.g7Txt {
- padding-top: 125px;
- padding-left: 50px;
-}
-.g7Pic img{
-  margin-top: 10%;
-}
-.g7Txt2 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
+
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------- Restorative --------------------------------------------------------------- */
 
@@ -901,13 +878,14 @@ form input, form textarea {
   padding: 20px;
   font-size: 300%;
   text-transform: uppercase;
+  padding-bottom: 0;
 }
 
 .restoSection h2 {
   text-transform: uppercase;
   padding: 20px;
   font-size: 200%;
-  margin-bottom: 1%;
+  margin-bottom: 0;
   margin-top: 1%;
   letter-spacing: 3px;
 }
@@ -941,24 +919,53 @@ form input, form textarea {
 }
 .restoDiv1 {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 45% 20% 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 35% 10% 1fr 1fr;
   background-color: var(--main-color2);
 }
 .restoDiv1H2 {
   grid-row-start:2;
   grid-row-end: 3;
-  margin: 2%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: 15px;
+}
+.resto1Img {
+  border-radius: var(--mainImgBR);
+  height: var(--mainImgH);
+  width: var(--mainImgW);
 }
 .restoDiv1P {
   grid-row-start: 3;
   grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 .restoDivImg {
   grid-row-start: 1;
   grid-row-end: 2;
-  padding-top: 40px;
+  padding-top: 10px;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
+.restoA, .restoB {
+  margin-bottom: 30px;
+}
+.restoNewDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 36% 30% 1fr;
+}
+.restoDiv2Txt {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.restoDiv2Img {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
 .restBaseDiv {
   display: grid;
   grid-template-columns: 1fr;
@@ -975,13 +982,16 @@ form input, form textarea {
   background-color: var(--main-color3);
 }
 .restoDiv3 {
-  background-color: var(--main-color2);
-}
-.restoDiv4 {
   background-color: var(--main-color4);
 }
+.restoDiv3 h2 {
+  color: white;
+}
 .restoDiv5 {
-  background-color: var(--main-color2);
+  background-color: var(--main-color3);
+}
+.restoDiv5 h2 {
+  color: white;
 }
 .restoDiv6, .restoDiv6B, .restoDiv6C {
   background-color: var(--main-color3);
@@ -993,27 +1003,54 @@ form input, form textarea {
   background-color: var(--main-color4);
 }
 .restoDiv9 {
-  background-color: var(--main-color2);
+  background-color: var(--main-color3);
+}
+.restoDiv9 h2 {
+  color: white;
 }
 .resto2Div1{
-  background-color: var(--main-color2);
+  background-color: var(--main-color3);
+}
+.resto2Div1 h2, .resto2Div1 h3 {
+  color: white;
 }
 .resto2Div2{
-  background-color: var(--main-color3);
+  background-color: var(--main-color4);
 }
 .resto2Div3{
   background-color: var(--main-color2);
 }
 .resto2Div4{
-  background-color: var(--main-color4);
+  background-color: var(--main-color3);
 }
 .resto2Div5{
-  background-color: var(--main-color2);
+  background-color: var(--main-color4);
+}
+.resto2Div5 h2 {
+  color: white;
 }
 .restobasic {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 40% 1fr;
+}
+.resto2Div1 img {
+  margin-top: 40px;
+}
+.resto2Div1 h3 {
+  padding-top: 40px;
+}
+.resto2DivTxt2 h3{
+  padding-top: 60px;
+}
+.resto2Div3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 37% 1fr 40%;
+}
+.resto2Div3Txt, .resto2Div3Img{
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 .restobasic2 {
   display: grid;
@@ -1028,18 +1065,20 @@ form input, form textarea {
   padding-top: 20px;
   margin-bottom: 0;
 }
-
+.resto2NewImgDiv {
+  margin-top: 40px;
+}
 /* ---------------------------------------------------- CarouselResto --------------------------------------------------------------- */
 
 .restoCarousel {
   position: relative;
-  height: 700px;
+  height: 750px;
   width: 90%;
   margin: 0 auto;
 }
 .restoCarousel2 {
   position: relative;
-  height: 550px;
+  height: 700px;
   width: 90%;
   margin: 0 auto;
 }
@@ -1133,7 +1172,7 @@ form input, form textarea {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   padding: 2% 0 0% 0;
-  background-color: var(--main-color4);
+  background-color: var(--main-color3);
 }
 .teethMPicDiv2 h3 {
   padding-top: 2%;
@@ -1165,6 +1204,89 @@ form input, form textarea {
   background-color: var(--main-color3);
 }
 /* --------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------- Root Canal --------------------------------------------------------------- */
+.rootSect {
+  background-color: var(--main-color);
+}
+.rootSect a {
+  text-decoration: none;
+}
+.rootMainDiv {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 10% 50%;
+}
+.rootDivH1 h1{
+  display: flex;
+  justify-content: center;
+}
+.rootDivH1 button {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+.rootMainImg {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.rootMainPic {
+  display: flex;
+  align-items:  center;
+}
+.rootMainImg img {
+  border-radius: var(--mainImgBR);
+  height: var(--mainImgH);
+  width: var(--mainImgW);
+}
+.rootCarousel {
+  position: relative;
+  height: 600px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: var(--main-color2);
+}
+.rootSubImg{
+  border-radius: var(--mainImgBR);
+  height: var(--mainImgH);
+  width: var(--mainImgW);
+  margin-top: 60px;
+}
+.rootDiv1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40% 1fr;
+}
+.rootImg1 {
+  display: flex;
+  justify-content: center;
+}
+.rootImg2{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: center;
+}
+.root1Txt {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.root1Txt p {
+  text-align: center;
+  margin-top: 20px;
+}
+.root1Txt h2 {
+  text-align: center;
+  margin: 30px;
+}
+/* --------------------------------------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------- Emergency --------------------------------------------------------------- */
 .emerSect {
   background-color: var(--main-color);
@@ -1185,8 +1307,9 @@ form input, form textarea {
   outline: none;
   cursor: pointer;
   width: 150px;
-  margin: 20px auto;
+  margin: 5px auto;
   border-radius: 30px;
+  
 }
 .bookButtonPages:hover {
   background-color: orange;
@@ -1195,7 +1318,7 @@ form input, form textarea {
 .emerDiv {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 10% 1fr 10% 10%;
+  grid-template-rows: 15% 1fr 10% 10%;
 }
 .emerPic {
   grid-row-start: 0;
@@ -1238,6 +1361,7 @@ form input, form textarea {
   padding: 20px 20px 20px;
   font-size: 300%;
   text-transform: uppercase;
+  padding-bottom: 0;
 }
 .specialSection  p {
   line-height: 200%;
@@ -1294,6 +1418,7 @@ form input, form textarea {
   padding: 20px;
   font-size: 300%;
   text-transform: uppercase;
+  padding-bottom: 0;
 }
 .orthoSection p {
   line-height: 200%;
@@ -1456,6 +1581,7 @@ form input, form textarea {
   padding: 20px;
   font-size: 300%;
   text-transform: uppercase;
+  padding-bottom: 0;
 }
 .patientSection p {
 
@@ -1699,7 +1825,7 @@ form input, form textarea {
     top: 30%;
     left: 88%;
     font-size: 10px;
-    padding: 6px 12px;
+    padding: 12px 24px;
   }
   .subMenu {
     display: grid;
@@ -2020,7 +2146,7 @@ form input, form textarea {
   grid-row-end: 2;
   padding-top: 20px;
 }
-.g5DivH2, .g6DivH2, .g7DivH2 {
+.g5DivH2, .g6DivH2  {
   grid-row-start: 2;
   grid-row-end: 3;
 }
@@ -2041,7 +2167,7 @@ form input, form textarea {
   grid-template-columns: 1fr;
   grid-template-rows: 16% 10% 1fr;
 }
-.g6Pic img, .g7Pic img {
+.g6Pic img {
   border-radius: var(--ImgBodySmlBR);
   height: var(--ImgBodySmlH);
   width: var(--ImgBodySmlW);
@@ -2068,30 +2194,7 @@ form input, form textarea {
   padding-top: 50px;
   padding-right: 0;
 }
-.g7Div {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 16% 15% 62% 4%;
-  padding-bottom: 20%;
-}
-.g7Pic {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  padding-top: 0;
-}
 
-.g7DivH2 {
-  padding-top: 20px;
-}
-.g7Txt {
-  grid-row-start: 3;
-  grid-row-end: 4;
-  padding-top: 0;
-  padding-left: 0;
-}
-.g7Txt2 {
-  padding-top: 20px;
-}
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------- Restorative --------------------------------------------------------------- */
 
@@ -2102,6 +2205,7 @@ form input, form textarea {
   padding-right: 1%;
   overflow-wrap: break-word;
   font-size: 250%;
+  padding-bottom: 0;
 }
 .restoDiv1 {
   display: grid;
@@ -2116,7 +2220,10 @@ form input, form textarea {
   width: var(--ImgBodySmlW);
 }
 .restoCarousel {
-  height: 1050px;
+  height: 1350px;
+}
+.restoDiv1 {
+  grid-template-rows: 16% 10% 1fr 1fr;
 }
 .restoDivImg {
   grid-row-start: 1;
@@ -2124,6 +2231,9 @@ form input, form textarea {
   margin-bottom: 0;
   grid-column-start: -3;
   padding-top: 20px;
+}
+.restoA, .restoB, .resto2A, .resto2B {
+  grid-column-start: 1;
 }
 .restoDiv1h2 {
   grid-row-start: 2;
@@ -2139,9 +2249,11 @@ form input, form textarea {
 .restoDiv2 {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 20% 16% 1fr;
+  grid-template-rows: 12% 46% 1fr 1fr;
 }
-
+.resto2A {
+  grid-row-start: 3;
+}
 .restoDiv2Txt h2 {
   padding-top: 40px;
 }
@@ -2245,12 +2357,28 @@ form input, form textarea {
   padding-top: 20px;
 }
 .restoCarousel2 {
-  height: 840px;
+  height: 1250px;
+}
+.notMainPic2 {
+  margin-top: 20px;
+}
+.teethMPicDiv2 {
+  padding-top: 40px;
+}
+.resto2DivTxt1 {
+  padding-top: 320px;
+}
+.resto2Div3 {
+  grid-template-columns: 1fr;
+  grid-template-rows: 14% 1fr 1fr;
+}
+.resto2Div3A, .resto2Div3B {
+  grid-column-start: 1;
 }
 .restobasic2 {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 24% 1fr;
+  grid-template-rows: 20% 1fr;
 }
 .restobasic2 h2 {
   padding-top: 10px;
@@ -2260,6 +2388,7 @@ form input, form textarea {
   grid-row-end: 2;
   padding-top: 20px;
 }
+
 .resto2Div1Txt2, .resto2Div2Txt2, 
 .resto2Div3Txt2, .resto2Div4Txt2 {
   padding-top: 20px;
@@ -2325,6 +2454,28 @@ form input, form textarea {
 }
 .teethDiv2-2 h3, .teethDiv2-2 p {
   padding-top: 20px;
+}
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------- Root Canal --------------------------------------------------------------- */
+.rootDiv1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25% 25% 1fr;
+}
+.rootCarousel {
+  height: 1000px
+}
+.rootImg2 {
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
+.root1Txt {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+}
+.rootCarousel {
+  height: 1200px
 }
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------- Emergency --------------------------------------------------------------- */
@@ -2523,22 +2674,7 @@ form input, form textarea {
     grid-template-columns: 1fr;
     grid-template-rows: 10% 1fr;
   }
-  .g7Div {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 10% 1fr;
-  }
-  .g7DivH2 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  .g7Txt {
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  .g7Txt2 {
-    padding-bottom: 40px;
-  }
+ 
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /*-----------------------------------------------------  Restorative  ----------------------------------------------------------- */  
   .notMainPic img {
@@ -2549,8 +2685,8 @@ form input, form textarea {
 
 .restoDiv1  {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1% 1% 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1% 1% 68% 1fr;
   }
   .notMainPic {
     grid-row-start: 1;
@@ -2585,10 +2721,10 @@ form input, form textarea {
     margin-top: 40px;
   }
   .restoCarousel {
-    height: 775px;
+    height: 825px;
   }
   .restoCarousel2 {
-    height: 650px;
+    height: 790px;
   }
   .notMainPic2 img{
     border-radius: var(--ImgBodyMBR);
