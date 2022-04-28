@@ -2221,7 +2221,7 @@ form input, form textarea {
   width: var(--ImgBodySmlW);
 }
 .restoCarousel {
-  height: 1350px;
+  height: 1400px;
 }
 .restoDiv1 {
   grid-template-rows: 16% 10% 1fr 1fr;
