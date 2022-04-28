@@ -1610,11 +1610,14 @@ form input, form textarea {
   line-height: 200%;
   text-transform: uppercase;
 }
-.review1, .review3, .review5, .review7{
+.review1, .review5{
   background-color: var(--main-color2);
 }
-.review2, .review6 {
+.review2, .review4 , .review6, .review8{
   background-color: var(--main-color3);
+}
+.review3, .review7 {
+  background-color: var(--main-color4);
 }
 .stars {
   width: 10%;
