@@ -1065,7 +1065,7 @@ form input, form textarea {
   padding-top: 20px;
   margin-bottom: 0;
 }
-.resto2NewImgDiv {
+.resto2NewImgDiv img{
   margin-top: 40px;
 }
 /* ---------------------------------------------------- CarouselResto --------------------------------------------------------------- */
@@ -2365,8 +2365,17 @@ form input, form textarea {
 .teethMPicDiv2 {
   padding-top: 40px;
 }
+.restoNewImgDiv3 {
+  margin-top: 20px;
+}
+.restoNewImgDiv{
+  margin-top: 60px;
+}
+.resto2NewImgDiv img{
+  margin-top: 20px;
+}
 .resto2DivTxt1 {
-  padding-top: 320px;
+  padding-top: 340px;
 }
 .resto2Div3 {
   grid-template-columns: 1fr;
