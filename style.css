@@ -36,10 +36,14 @@
 html,body{
   overflow-x: hidden;
 }
+.logo {
+  height: 80px;
+  margin-left: 20px;
+}
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------- NavBar --------------------------------------------------------------- */
 nav {
-  background-color: var(--newNavColor);
+  background-color: white;
   
 }
 nav:after{
@@ -57,12 +61,15 @@ nav ul {
 nav ul li {
   float: left;
   display: inline-block;
-  background: var(--newNavColor);
+  background: white;
   margin: 0 0px;
-  
 }
+nav ul a {
+  color: black;
+}
+
 nav ul li a {
-  color: white;
+  color: black;
   text-decoration: none;
   line-height: 70px;
   font-size: 18px;
@@ -1701,7 +1708,7 @@ form input, form textarea {
   display: block;
   position: relative;
   top: 15px;
-  left: 15px;
+  left: 5px;
   
   z-index: 1;
   
@@ -1715,9 +1722,12 @@ form input, form textarea {
   
   transition: color 0.3s ease;
 }
+nav ul li {
+  background: var(--footer-color2);
+}
 #menuToggle a:hover
 {
-  color: black;
+  color: white;
 }
 
 #menuToggle input
@@ -1860,7 +1870,8 @@ form input, form textarea {
     font-size: 250%;
   }
   .logo {
-    width: 350px;
+    width: 250px;
+    margin-left: 55px;
   }
 
   .heroContainer {
@@ -1868,7 +1879,7 @@ form input, form textarea {
       grid-row-end: 2;
   }
   .heroButton {
-    top: 30%;
+    top: 25%;
     left: 88%;
     font-size: 10px;
     padding: 12px 24px;
