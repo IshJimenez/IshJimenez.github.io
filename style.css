@@ -491,6 +491,30 @@ nav ul ul li a {
 .bookSection {
   background: var(--main-color);
 }
+.bookSectionMainDiv {
+  display: grid;
+  justify-content: center;
+}
+.bookSectionMainDiv img {
+  border-radius: var(--mainImgBR);
+  height: var(--mainImgH);
+  width: var(--mainImgW);
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.bookSectionMainTxt {
+  display: grid;
+  justify-content: center;
+  letter-spacing: 3px;
+  line-height: 150%;
+  overflow-wrap: break-word;
+  font-size: 250%;
+}
+.bookSectionMainTxt h2 {
+  padding: 0;
+  margin-bottom: 20px;
+
+}
 .formContainer{
   display: grid;
         grid-template-columns: 1fr 45%; 
@@ -2636,6 +2660,11 @@ nav ul li {
 
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------- Book --------------------------------------------------------------- */
+.bookSectionMainDivimg {
+  border-radius: var(--ImgBodySmlBR);
+  height: var(--ImgBodySmlH);
+  width: var(--ImgBodySmlW);
+}
 .formContainer {
   display: grid;
   grid-template-columns: 1fr;
