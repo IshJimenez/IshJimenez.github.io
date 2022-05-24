@@ -279,6 +279,9 @@ nav ul ul li a {
     width: 100%;
 
   }
+  /* .heroContainer img {
+    height: 500px;
+  } */
   .heroButton {
     position: absolute;
     top: 80%;
