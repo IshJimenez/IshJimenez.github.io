@@ -558,6 +558,11 @@ form h2{
   justify-content: center;
   color: white;
 }
+.formNum {
+  color: var(--footer-color);
+  font-size: 18px;
+  font-weight: 800;
+}
 form input, form textarea {
   border: 0;
   margin: 10px 0;
