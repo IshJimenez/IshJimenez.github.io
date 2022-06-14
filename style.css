@@ -545,7 +545,7 @@ form {
   height: 800px;
   width: 100%;
 }
-form h2{
+form h1{
   color: var(--footer-color);
   font-weight: 800;
   margin-bottom: 20px;
