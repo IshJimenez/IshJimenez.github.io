@@ -150,6 +150,10 @@ nav ul ul li a {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
+  .subMenu2 h2, .subMenu2 p{
+    text-align: center;
+    padding-bottom: 20px;
+  }
   .subMenu h3 {
     padding-top: 20px;
   }
