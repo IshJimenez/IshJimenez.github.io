@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Rapor", "Arial", "Helvetica", "sans-serif";
+  /* "Rapor", "Arial", "Helvetica", "sans-serif" */
   --hm1-width: 6px;
   --hm2-width: 80px;
   --hm3-width: 50px;
@@ -150,12 +151,19 @@ nav ul ul li a {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
+  .subMenu img {
+    margin-top: 20px;
+  }
   .subMenu2 h2, .subMenu2 p{
     text-align: center;
     padding-bottom: 20px;
   }
   .subMenu h3 {
     padding-top: 20px;
+    text-transform: uppercase;
+  }
+  .subMenu2 {
+    margin-top: 20px;
   }
   .generalSubDiv, .restoSubDiv,  
   .teethSubDiv, .orthoSubDiv, .drJSubDiv, 
@@ -164,7 +172,24 @@ nav ul ul li a {
     justify-content: center;
     text-align: center;
   }
-
+  /* .drJSubDiv {
+    background-color: var(--main-color2);
+  }
+  .emerSubDiv {
+    background-color: var(--main-color3);
+  }
+  .generalSubDiv {
+    background-color: var(--main-color2);
+  }
+  .restoSubDiv {
+    background-color: var(--main-color3);
+  }
+  .teethSubDiv {
+    background-color: var(--main-color2);
+  }
+  .orthoSubDiv {
+    background-color: var(--main-color3);
+  } */
   .subDivImg {
     border-radius: var(--ImgBodySmlBR);
     height: var(--ImgBodySmlH);
