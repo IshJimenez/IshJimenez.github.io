@@ -172,24 +172,24 @@ nav ul ul li a {
     justify-content: center;
     text-align: center;
   }
-  /* .drJSubDiv {
-    background-color: var(--main-color2);
+  .drJSubDiv {
+    background-color: var(--main-color1);
   }
   .emerSubDiv {
-    background-color: var(--main-color3);
+    background-color: var(--main-color1);
   }
   .generalSubDiv {
-    background-color: var(--main-color2);
+    background-color: var(--main-color1);
   }
   .restoSubDiv {
-    background-color: var(--main-color3);
+    background-color: var(--main-color1);
   }
   .teethSubDiv {
-    background-color: var(--main-color2);
+    background-color: var(--main-color1);
   }
   .orthoSubDiv {
-    background-color: var(--main-color3);
-  } */
+    background-color: var(--main-color1);
+  }
   .subDivImg {
     border-radius: var(--ImgBodySmlBR);
     height: var(--ImgBodySmlH);
