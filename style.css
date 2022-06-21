@@ -721,6 +721,12 @@ form input, form textarea {
   padding-top: 20px;
   font-size: 300%;
 }
+.insurSection h2 {
+  margin: 30px;
+}
+.insurP1 {
+  margin-top: 10px;
+}
 .insurImgTxt {
   padding-left: 20%;
   padding-right: 20%;
@@ -728,6 +734,13 @@ form input, form textarea {
 .insurImgTxt p {
   padding: 0px 50px;
   line-height: 200%;
+}
+.insurTxt2 {
+  padding: 20px;
+  font-weight: 700;
+}
+.insur2Txt2 {
+  padding: 20px;
 }
 .insurImgLi {
   padding: 0px 25px 50px;
@@ -737,6 +750,9 @@ form input, form textarea {
   list-style-type: none;
   font-weight: bold;
   letter-spacing: 1px;
+}
+.insurEndP {
+  font-weight: 700;
 }
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------- Covid --------------------------------------------------------------- */
