@@ -1451,8 +1451,8 @@ form input, form textarea {
   width: 150px;
   margin: 5px auto;
   border-radius: 30px;
-  
 }
+
 .bookButtonPages:hover {
   background-color: orange;
   color: black;
@@ -1460,7 +1460,7 @@ form input, form textarea {
 .emerDiv {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 15% 1fr 10% 10%;
+  grid-template-rows: 9% 1fr 7% 8%;
 }
 .emerPic {
   grid-row-start: 0;
@@ -2118,6 +2118,10 @@ nav ul li {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+
+
+
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------- General and Preventative --------------------------------------------------------------- */
 .generalMainNonArrowImg, .generalNonArrowImg{
@@ -2663,10 +2667,14 @@ nav ul li {
 /* ----------------------------------------------- Emergency --------------------------------------------------------------- */
 
 .emerTxtEnd {
-  margin-top: 30px;
-  margin-bottom: 10px;
+  /* margin-top: 30px;
+  margin-bottom: 10px; */
 }
-
+.emerDiv {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 11% 1fr 10% 10%;
+}
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------- Ortho --------------------------------------------------------------- */
 
@@ -2980,11 +2988,13 @@ nav ul li {
 
   /* --------------------------------------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------- Emergency --------------------------------------------------------------- */
-.emerTxt {
+.emerTxt{
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 10%;
+  grid-template-rows: 1fr 1fr 1fr 25%;
 }
-
+.emerTxt2 {
+  padding: 10;
+}
 
 
 
