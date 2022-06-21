@@ -726,7 +726,7 @@ form input, form textarea {
   padding-right: 20%;
 }
 .insurImgTxt p {
-  padding: 15px 50px;
+  padding: 0px 50px;
   line-height: 200%;
 }
 .insurImgLi {
@@ -773,6 +773,7 @@ form input, form textarea {
 .covidDivUl {
   margin: 20px;
   font-weight: 700;
+  list-style: none;
 }
 .otherUl {
   padding: 20px;
