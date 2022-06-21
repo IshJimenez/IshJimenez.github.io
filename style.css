@@ -179,16 +179,16 @@ nav ul ul li a {
     background-color: var(--main-color3);
   }
   .generalSubDiv {
-    background-color: var(--main-color1);
+    background-color: var(--footer-color);
   }
   .restoSubDiv {
-    background-color: var(--main-color1);
+    background-color: var(--main-color3);
   }
   .teethSubDiv {
-    background-color: var(--main-color2);
+    background-color: var(--footer-color);
   }
   .orthoSubDiv {
-    background-color: var(--main-color3);
+    background-color: var(--main-color2);
   }
   .subDivImg {
     border-radius: var(--ImgBodySmlBR);
@@ -200,7 +200,7 @@ nav ul ul li a {
   }
   .subDivButton{
     padding: 15px;
-    background: var(--footer-color);
+    background: var(--main-color4);
     color: white;
     font-size: 18px;
     border: 0;
@@ -755,14 +755,28 @@ form input, form textarea {
   width: var(--mainImgW);
 }
 .covidTxt {
-  padding: 50px 50px;
+  padding: 40px 50px 0px;
   line-height: 200%;
 }
 .covidTxtP1{
-  margin-top: 2.5%;
+  margin-top: 1.5%;
 }
 .covidTxtP2 {
-  margin-bottom: 2.5%;
+  margin-bottom: 1.5%;
+}
+.covidDivH2 {
+  margin: 30px;
+}
+.covidDiv p, .covidDiv ul {
+  line-height: 200%;
+}
+.covidDivUl {
+  margin: 20px;
+  font-weight: 700;
+}
+.otherUl {
+  padding: 20px;
+  font-weight: 700;
 }
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------- General and Preventative --------------------------------------------------------------- */
