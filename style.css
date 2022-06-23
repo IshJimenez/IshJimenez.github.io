@@ -195,6 +195,9 @@ nav ul ul li a {
     height: var(--ImgBodySmlH);
     width: var(--ImgBodySmlW);
   }
+  .subMenuP {
+    margin-top: 10px;
+  }
   .subDivButton{
     margin: 20px 0;
   }
@@ -722,7 +725,7 @@ form input, form textarea {
   font-size: 300%;
 }
 .insurSection h2 {
-  margin: 30px;
+  margin: 20px;
 }
 .insurP1 {
   margin-top: 10px;
@@ -743,7 +746,7 @@ form input, form textarea {
   padding: 20px;
 }
 .insurImgLi {
-  padding: 0px 25px 50px;
+  padding: 30px 20px 30px;
   line-height: 200%;
 }
 .insurImgLi li {
