@@ -741,6 +741,7 @@ form input, form textarea {
 .insurTxt2 {
   padding: 20px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 .insur2Txt2 {
   padding: 20px;
@@ -756,6 +757,7 @@ form input, form textarea {
 }
 .insurEndP {
   font-weight: 700;
+  text-transform: uppercase;
 }
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------- Covid --------------------------------------------------------------- */
