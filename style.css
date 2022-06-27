@@ -161,6 +161,8 @@ nav ul ul li a {
   .subMenu h3 {
     padding-top: 20px;
     text-transform: uppercase;
+    letter-spacing: 5px;
+    
   }
   .subMenu2 {
     margin-top: 20px;
@@ -204,7 +206,7 @@ nav ul ul li a {
   .subDivButton{
     padding: 15px;
     background: var(--main-color4);
-    color: white;
+    color: black;
     font-size: 18px;
     border: 0;
     outline: none;
@@ -215,7 +217,7 @@ nav ul ul li a {
   }
   .subDivButton:hover {
     background-color: orange;
-    color: black;
+    color: white;
   }
   .welcomeAr1 {
       display: grid;
@@ -697,7 +699,7 @@ form input, form textarea {
   font-size: 300%;
 }
 .drImgTxt p {
-  padding: 25px 50px;
+  padding: 10px 50px;
   line-height: 200%;
 }
 .drImgDiv img{
@@ -776,11 +778,11 @@ form input, form textarea {
   width: var(--mainImgW);
 }
 .covidTxt {
-  padding: 40px 50px 0px;
+  padding: 20px 50px 0px;
   line-height: 200%;
 }
 .covidTxtP1{
-  margin-top: 1.5%;
+  margin-top: 10px;
 }
 .covidTxtP2 {
   margin-bottom: 1.5%;
@@ -840,6 +842,9 @@ form input, form textarea {
   margin-top: 1%;
   letter-spacing: 3px;
 }
+.generalStartingP {
+  padding: 20px 0px;
+ }
 .g2Txt h2, .g3Txt h2, .g3BTxt2 h2, .g4DivH2, .g6DivH2{
   color: white
 }
@@ -1734,10 +1739,19 @@ form input, form textarea {
 
   line-height: 200%;
 }
+.patientSection h2 {
+  font-size: 150%;
+  line-height: 200%;
+  text-transform: uppercase;
+}
 .patientSection h3 {
   font-size: 150%;
   line-height: 200%;
   text-transform: uppercase;
+}
+.patientH2Div {
+  background-color: var(--main-color);
+  padding-bottom: 20px;
 }
 .patientViDiv {
   background-color: var(--main-color3);
@@ -2155,6 +2169,7 @@ nav ul li {
   font-size: 250%;
   padding-top: 10px;
 }
+
 .carouselGeneral {
   height: 1150px;
 }
