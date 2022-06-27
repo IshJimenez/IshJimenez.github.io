@@ -1739,11 +1739,14 @@ form input, form textarea {
   line-height: 200%;
   text-transform: uppercase;
 }
+.patientViDiv {
+  background-color: var(--main-color3);
+}
 .review1, .review5{
   background-color: var(--main-color2);
 }
 .review2, .review4 , .review6, .review8{
-  background-color: var(--main-color3);
+  background-color: var(--footer-color);
 }
 .review3, .review7 {
   background-color: var(--main-color4);
