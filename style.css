@@ -15,7 +15,7 @@
   --main-color2: #edf4f5;
   --main-color3: #8cb3b8;
   --main-color4: #dab968;
-  --footer-color: #2b7379;
+  --footer-color: #598e93;
   --footer-color2: #3a3b3d;
   --newNavColor: #3a3b3d;
   --mainImgBR: 100px;
@@ -618,6 +618,10 @@ form input, form textarea {
   margin: 20px auto;
   border-radius: 30px;
 }
+.submitBut:hover {
+  background-color: orange;
+  color: black;
+}
 .storeHrsBook {
   padding-bottom: 10px;
   grid-column-start: 2;
@@ -732,6 +736,9 @@ form input, form textarea {
 .insurP1 {
   margin-top: 10px;
 }
+.insurDiv2 {
+  padding-bottom: 20px;
+}
 .insurImgTxt {
   padding-left: 20%;
   padding-right: 20%;
@@ -761,6 +768,7 @@ form input, form textarea {
   font-weight: 700;
   text-transform: uppercase;
 }
+
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------- Covid --------------------------------------------------------------- */
 .covidSection{
@@ -1713,6 +1721,10 @@ form input, form textarea {
   width: 150px;
   margin: 20px 2%;
   border-radius: 30px;
+}
+.patientBut:hover {
+  background-color: orange;
+  color: black;
 }
 .patientMPic{
   border-radius: var(--mainImgBR);
