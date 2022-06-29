@@ -258,6 +258,7 @@ nav ul ul li a {
   }
   .welcomeA1ItemP {
     font-weight: 900;
+    text-transform:capitalize;
   }
   .welcomeAr2 {
       background-color: var(--main-color2);
