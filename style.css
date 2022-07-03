@@ -258,7 +258,12 @@ nav ul ul li a {
   }
   .welcomeA1ItemP {
     font-weight: 900;
-    text-transform:capitalize;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+  }
+  .welcomeA1ItemPEnd {
+    font-weight: 900;
+    /* text-transform: uppercase; */
   }
   .welcomeAr2 {
       background-color: var(--main-color2);
@@ -543,7 +548,7 @@ nav ul ul li a {
 .bookSectionMainTxt {
   display: grid;
   justify-content: center;
-  letter-spacing: 3px;
+  uppercase;
   line-height: 150%;
   overflow-wrap: break-word;
   font-size: 250%;
