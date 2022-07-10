@@ -548,7 +548,7 @@ nav ul ul li a {
 .bookSectionMainTxt {
   display: grid;
   justify-content: center;
-  uppercase;
+  text-transform: uppercase;
   line-height: 150%;
   overflow-wrap: break-word;
   font-size: 250%;
@@ -1780,6 +1780,11 @@ form input, form textarea {
 .reviewFrontPage h3, .reviewFrontPage p{
   display: flex;
   justify-content: center;
+  margin: 0 10%;
+  text-align: center;
+}
+.reviewFrontPage h3 {
+  margin-top: .5%;
 }
 .reviewFrontPage img {
   display: block;
