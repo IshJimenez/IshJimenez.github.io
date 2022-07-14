@@ -158,11 +158,14 @@ nav ul ul li a {
     text-align: center;
     padding-bottom: 20px;
   }
+  .indexPatReviewH2 {
+    text-align: center;
+    padding: 20px;
+  }
   .subMenu h3 {
     padding-top: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
-    
   }
   .subMenu2 {
     margin-top: 20px;
