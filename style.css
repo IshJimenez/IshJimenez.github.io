@@ -62,7 +62,7 @@ nav ul {
 nav ul li {
   float: left;
   display: inline-block;
-  background: white;
+  background: black;
   margin: 0 0px;
 }
 nav ul a {
