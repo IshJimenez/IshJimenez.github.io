@@ -531,6 +531,42 @@ nav ul ul li a {
   
   .gFooterR {
     margin-top: 1%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 10px;
+  }
+  /* .mediaH2div {
+    grid-row-start: 0;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  } */
+  .facDiv {
+    grid-row-start: 1;
+  }
+  .instaDiv {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .twitDiv {
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  .patientLogoFac, .patientLogoInsta, .patientLogoTwit {
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+  }
+  .patientLogoFac {
+    position:relative;
+    float:right;
+  }
+  .patientLogoTwit {
+    position:relative;
+    float:left;
   }
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------- Book --------------------------------------------------------------- */
@@ -1778,7 +1814,7 @@ form input, form textarea {
   background-color: var(--main-color3);
 }
 .reviewFrontPage h3 {
-  margin-top: 1%;
+  padding-top: 15px;
 }
 .reviewFrontPage h3, .reviewFrontPage p{
   display: flex;
