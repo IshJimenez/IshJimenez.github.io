@@ -331,7 +331,7 @@ nav ul ul li a {
     left: 88%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color:orange;
+    background: var(--main-color4);
     color: black;
     font-size: 16px;
     padding: 24px 36px;
@@ -341,7 +341,7 @@ nav ul ul li a {
     text-align: center;
   }
   .heroButton:hover {
-    background-color: var(--footer-color);
+    background-color: orange;
     color: white;
     font-weight: bold;
   }
@@ -2005,9 +2005,12 @@ nav ul li {
   background-color: var(--main-color3);
   text-align:left;
 }
-#menu li a:hover, #menu li a:active {
-  color: white;
-}
+/* #menuMain li:hover, #menuMain:active {
+  color: red;
+} */
+/* #menu li ul li:hover, #menu li ul li:active {
+  color: red;
+} */
 #menu li ul :hover, #menu li ul :active{
   color: black;
   background-color: var(--main-color2);
@@ -2017,9 +2020,9 @@ nav ul li {
   padding-top: 25px;
   letter-spacing: 2px;
 }
-/* .navM2, .navM3 a:hover{
+.navM1 a:hover, .navM2 a:hover{
   margin-right: 500px;
-} */
+}
 
 #menu li ul {
   margin-top: 30px;
