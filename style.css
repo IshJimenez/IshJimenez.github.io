@@ -221,6 +221,8 @@ nav ul ul li a {
   .subDivButton:hover {
     background-color: orange;
     color: white;
+    letter-spacing: 2px;
+    
   }
   .welcomeAr1 {
       display: grid;
@@ -344,6 +346,7 @@ nav ul ul li a {
     background-color: orange;
     color: white;
     font-weight: bold;
+    letter-spacing: 2px;
   }
   /* ---------------------------------------------------- CarouselFrontPage --------------------------------------------------------------- */
 
@@ -666,6 +669,7 @@ form input, form textarea {
 .submitBut:hover {
   background-color: orange;
   color: black;
+  letter-spacing: 2px;
 }
 .storeHrsBook {
   padding-bottom: 10px;
@@ -1519,6 +1523,7 @@ form input, form textarea {
 .bookButtonPages:hover {
   background-color: orange;
   color: black;
+  letter-spacing: 2px;
 }
 .emerDiv {
   display: grid;
@@ -1770,6 +1775,7 @@ form input, form textarea {
 .patientBut:hover {
   background-color: orange;
   color: black;
+  letter-spacing: 1px;
 }
 .patientMPic{
   border-radius: var(--mainImgBR);
