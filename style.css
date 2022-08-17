@@ -1528,7 +1528,7 @@ form input, form textarea {
 .emerDiv {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 9% 1fr 7% 8%;
+  grid-template-rows: 4% 1fr 7% 8%;
 }
 .emerPic {
   grid-row-start: 0;
