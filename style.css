@@ -517,14 +517,16 @@ nav ul ul li a {
     background-color: var(--footer-color2);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 15% 1fr 1fr;
+    grid-template-rows: 1fr 15% 1fr;
     color: white;
     text-align: center;
   }
-  
-  .gFooterL p{
-    margin-top: 1%;
+  .instaDiv {
+    padding-bottom: 20px;
   }
+  /* .gFooterL p{
+    margin-top: 1%;
+  } */
   
   .gFooterM h2{
     margin-top: .5%;
